@@ -10,6 +10,7 @@
 sysinfo.txt
 *.pidb.meta
 man/Temp/UnityLockfile 
+proj/Temp/UnityLockfile
 # VS/Rider/MD/Consulo
 ExportedObj/
 .consulo/
