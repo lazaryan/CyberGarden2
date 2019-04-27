@@ -23,7 +23,7 @@ namespace sockets
             })).Start();
         }
 
-        static void server()
+        static void server(Func<string, int> method)
         {
             Console.WriteLine("Start server...");
             IPEndPoint ipPoint = new IPEndPoint(IPAddress.Parse(gethost()), port);
@@ -47,7 +47,7 @@ namespace sockets
 
                     string message = Encoding.ASCII.GetString(data, 0, bytes);
 
-                    action(message);
+                    method(message);
                 }
             }
             catch (Exception ex)

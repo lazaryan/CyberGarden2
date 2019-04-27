@@ -16,11 +16,12 @@ namespace sockets
         static int port = 2060;
         static int list = 10;
 
+        static string ip_learner = "10.131.57.101";
+
         public void start()
         {
             string message = CreateMessage("action", gethost());
-            Console.WriteLine(message);
-            SendMessage("127.0.0.1", message);
+            SendMessage(ip_learner, message);
         }
 
         public void SendMessage(string ip, string message)
