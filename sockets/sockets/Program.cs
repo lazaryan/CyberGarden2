@@ -29,7 +29,7 @@ namespace sockets
         {
             Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             Console.WriteLine("Server start...");
-            socket.Bind(new IPEndPoint(IPAddress.Parse("10.131.57.101"), port));
+            socket.Bind(new IPEndPoint(IPAddress.Any, port));
             socket.Listen(200);
 
             socket.Accept();
