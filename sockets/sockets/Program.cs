@@ -12,29 +12,37 @@ namespace sockets
 {
     class Program
     {
-        static int port = 2020;
+        static int port = 2060;
 
         static void Main(string[] args)
         {
             Server();
-            //Client("message", "10.131.56.21", port);
+            Client("message", "10.131.57.248", port);
             string mess = CreateMessage("aaa", 123, "asd");
-            string[] aa = getArrayToMessage(mess);
-            Console.WriteLine(aa[1]);
-            Console.WriteLine(mess);
-            Console.ReadKey();
+            //string[] aa = getArrayToMessage(mess);
+            //Console.WriteLine(aa[1]);
+            //Console.WriteLine(mess);
+            //Console.ReadKey();
         }
 
         static void Server()
         {
             Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             Console.WriteLine("Server start...");
-            socket.Bind(new IPEndPoint(IPAddress.Any, port));
-            socket.Listen(20);
+            socket.Bind(new IPEndPoint(IPAddress.Parse("10.131.57.101"), port));
+            socket.Listen(200);
+
+            socket.Accept();
+
+            byte[] buffer2 = new byte[1024];
+
+            int receive2 = socket.Receive(buffer2);
+            string message2 = Encoding.ASCII.GetString(buffer2, 0, receive2);
+
             while (true)
             {
-                socket.Accept();
                 byte[] buffer = new byte[1024];
+       
                 int receive = socket.Receive(buffer);
                 string message = Encoding.ASCII.GetString(buffer, 0, receive);
 
@@ -61,8 +69,9 @@ namespace sockets
         {
             Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             socket.Connect(ip, port);
+            string a = Console.ReadLine();
 
-            byte[] buffer = Encoding.ASCII.GetBytes(message);
+            byte[] buffer = Encoding.ASCII.GetBytes(a);
 
             socket.Send(buffer);
         }
