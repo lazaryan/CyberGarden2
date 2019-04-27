@@ -16,8 +16,12 @@ namespace sockets
 
         static void Main(string[] args)
         {
-            Server();
-            Client("message", "10.131.57.248", port);
+            //Server();
+            //Client("message", "10.131.57.248", port);
+            string host = Dns.GetHostName();
+            string test = Dns.GetHostByName(host).AddressList[0].ToString();
+            Console.WriteLine(test);
+            Console.ReadKey();
             string mess = CreateMessage("aaa", 123, "asd");
             //string[] aa = getArrayToMessage(mess);
             //Console.WriteLine(aa[1]);
@@ -29,7 +33,7 @@ namespace sockets
         {
             Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             Console.WriteLine("Server start...");
-            socket.Bind(new IPEndPoint(IPAddress.Any, port));
+            socket.Bind(new IPEndPoint(IPAddress.Parse("10.131.57.101"), port));
             socket.Listen(200);
 
             socket.Accept();
@@ -69,9 +73,8 @@ namespace sockets
         {
             Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             socket.Connect(ip, port);
-            string a = Console.ReadLine();
 
-            byte[] buffer = Encoding.ASCII.GetBytes(a);
+            byte[] buffer = Encoding.ASCII.GetBytes(message);
 
             socket.Send(buffer);
         }
