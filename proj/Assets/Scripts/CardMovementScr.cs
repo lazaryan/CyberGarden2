@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Data.OleDb;
+using System.Data;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CardScr : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
+public class CarMovementdScr : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     Camera MainCamera;
     Vector3 offset;
@@ -45,6 +48,8 @@ public class CardScr : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragH
         transform.SetSiblingIndex(TempCardGO.transform.GetSiblingIndex());
         TempCardGO.transform.SetParent(GameObject.Find("Canvas").transform);
         TempCardGO.transform.localPosition = new Vector3(2312, 0);
+        mysql sq = new mysql();
+        sq.sql();
     }
     void CheckPosition()
     {

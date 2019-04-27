@@ -61,9 +61,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CardInfoScr.cs" />
     <Compile Include="Assets\Scripts\CardManagerScr.cs" />
-    <Compile Include="Assets\Scripts\CardScr.cs" />
+    <Compile Include="Assets\Scripts\CardMovementScr.cs" />
     <Compile Include="Assets\Scripts\DropPlaceScr.cs" />
+    <Compile Include="Assets\Scripts\mysql.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>G:/project/CyberGarden2/proj/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -279,6 +281,21 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.13f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>G:/project/CyberGarden2/proj/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>G:/project/CyberGarden2/proj/Assets/Plugins/System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>G:/project/CyberGarden2/proj/Assets/Plugins/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <HintPath>G:/project/CyberGarden2/proj/Assets/Plugins/System.EnterpriseServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security">
+      <HintPath>G:/project/CyberGarden2/proj/Assets/Plugins/System.Security.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/splin/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>

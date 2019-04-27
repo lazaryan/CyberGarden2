@@ -169,3 +169,8 @@ G:\project\CyberGarden2\proj\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.
 G:\project\CyberGarden2\proj\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 G:\project\CyberGarden2\proj\obj\Debug\Assembly-CSharp.dll
 G:\project\CyberGarden2\proj\obj\Debug\Assembly-CSharp.pdb
+G:\project\CyberGarden2\proj\Temp\bin\Debug\Mono.Data.Sqlite.dll
+G:\project\CyberGarden2\proj\Temp\bin\Debug\System.Configuration.dll
+G:\project\CyberGarden2\proj\Temp\bin\Debug\System.Data.dll
+G:\project\CyberGarden2\proj\Temp\bin\Debug\System.EnterpriseServices.dll
+G:\project\CyberGarden2\proj\Temp\bin\Debug\System.Security.dll

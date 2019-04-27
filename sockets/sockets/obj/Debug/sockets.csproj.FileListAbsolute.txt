@@ -1,0 +1,7 @@
+G:\project\CyberGarden2\sockets\sockets\bin\Debug\sockets.exe.config
+G:\project\CyberGarden2\sockets\sockets\bin\Debug\sockets.exe
+G:\project\CyberGarden2\sockets\sockets\bin\Debug\sockets.pdb
+G:\project\CyberGarden2\sockets\sockets\obj\Debug\sockets.csprojResolveAssemblyReference.cache
+G:\project\CyberGarden2\sockets\sockets\obj\Debug\sockets.csproj.CoreCompileInputs.cache
+G:\project\CyberGarden2\sockets\sockets\obj\Debug\sockets.exe
+G:\project\CyberGarden2\sockets\sockets\obj\Debug\sockets.pdb
