@@ -6,23 +6,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
-using System.Threading;
+using System.Runtime.Serialization.Json;
+using System.Runtime.Serialization;
 
 namespace sockets
 {
-    class Program
+    class Client
     {
         static int port = 2060;
         static int list = 10;
 
-        static void Main(string[] args)
+        public void start()
         {
-            Server server = new Server();
-            server.start();
-            //Client("message", "10.131.57.248", port);
-            //string mess = CreateMessage("aaa", 123, "asd");
-            Client client = new Client();
-            client.start();
+            string message = CreateMessage("action", gethost());
+            Console.WriteLine(message);
+            SendMessage("127.0.0.1", message);
+        }
+
+        public void SendMessage(string ip, string message)
+        {
+            Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            socket.Connect(ip, port);
+
+            byte[] buffer = Encoding.ASCII.GetBytes(message);
+
+            socket.Send(buffer);
         }
 
         static string CreateMessage(string type, params object[] args)
@@ -36,16 +44,6 @@ namespace sockets
             return tmp;
         }
 
-        static string[] getArrayToMessage(string message)
-        {
-            return message.Split(' ');
-        }
-
-        static void add_user(string ip, string name)
-        {
-            //TODO: add user to game
-        }
-
         static string gethost()
         {
             string host = Dns.GetHostName();
@@ -53,3 +51,5 @@ namespace sockets
         }
     }
 }
+
+
