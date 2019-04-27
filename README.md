@@ -48,5 +48,5 @@
 
 Заливка кода не в ветке main
 ```bush
-> git push main <name_branch>
+> git push origin <name_branch>
 ```
