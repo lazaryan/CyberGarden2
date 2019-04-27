@@ -1,0 +1,9 @@
+D:\CyberGarden2\sockets\sockets\bin\Debug\sockets.exe.config
+D:\CyberGarden2\sockets\sockets\bin\Debug\sockets.exe
+D:\CyberGarden2\sockets\sockets\bin\Debug\sockets.pdb
+D:\CyberGarden2\sockets\sockets\obj\Debug\sockets.csproj.CoreCompileInputs.cache
+D:\CyberGarden2\sockets\sockets\obj\Debug\sockets.exe
+D:\CyberGarden2\sockets\sockets\obj\Debug\sockets.pdb
+D:\CyberGarden2\sockets\sockets\bin\Debug\Newtonsoft.Json.dll
+D:\CyberGarden2\sockets\sockets\bin\Debug\Newtonsoft.Json.xml
+D:\CyberGarden2\sockets\sockets\obj\Debug\sockets.csproj.CopyComplete
