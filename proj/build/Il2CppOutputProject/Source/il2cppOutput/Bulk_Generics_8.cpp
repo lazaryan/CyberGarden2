@@ -5113,10 +5113,12 @@ public:
 	String_t* ___Name_0;
 	// UnityEngine.Sprite Card_door_monster::Logo
 	Sprite_t280657092 * ___Logo_1;
+	// UnityEngine.Sprite Card_door_monster::Shirt
+	Sprite_t280657092 * ___Shirt_2;
 	// System.Int32 Card_door_monster::Level
-	int32_t ___Level_2;
+	int32_t ___Level_3;
 	// System.Int32 Card_door_monster::Level_up
-	int32_t ___Level_up_3;
+	int32_t ___Level_up_4;
 
 public:
 	inline static int32_t get_offset_of_Name_0() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Name_0)); }
@@ -5137,20 +5139,29 @@ public:
 		Il2CppCodeGenWriteBarrier((&___Logo_1), value);
 	}
 
-	inline static int32_t get_offset_of_Level_2() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Level_2)); }
-	inline int32_t get_Level_2() const { return ___Level_2; }
-	inline int32_t* get_address_of_Level_2() { return &___Level_2; }
-	inline void set_Level_2(int32_t value)
+	inline static int32_t get_offset_of_Shirt_2() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Shirt_2)); }
+	inline Sprite_t280657092 * get_Shirt_2() const { return ___Shirt_2; }
+	inline Sprite_t280657092 ** get_address_of_Shirt_2() { return &___Shirt_2; }
+	inline void set_Shirt_2(Sprite_t280657092 * value)
 	{
-		___Level_2 = value;
+		___Shirt_2 = value;
+		Il2CppCodeGenWriteBarrier((&___Shirt_2), value);
 	}
 
-	inline static int32_t get_offset_of_Level_up_3() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Level_up_3)); }
-	inline int32_t get_Level_up_3() const { return ___Level_up_3; }
-	inline int32_t* get_address_of_Level_up_3() { return &___Level_up_3; }
-	inline void set_Level_up_3(int32_t value)
+	inline static int32_t get_offset_of_Level_3() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Level_3)); }
+	inline int32_t get_Level_3() const { return ___Level_3; }
+	inline int32_t* get_address_of_Level_3() { return &___Level_3; }
+	inline void set_Level_3(int32_t value)
 	{
-		___Level_up_3 = value;
+		___Level_3 = value;
+	}
+
+	inline static int32_t get_offset_of_Level_up_4() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Level_up_4)); }
+	inline int32_t get_Level_up_4() const { return ___Level_up_4; }
+	inline int32_t* get_address_of_Level_up_4() { return &___Level_up_4; }
+	inline void set_Level_up_4(int32_t value)
+	{
+		___Level_up_4 = value;
 	}
 };
 
@@ -5162,16 +5173,18 @@ struct Card_door_monster_t3388216757_marshaled_pinvoke
 {
 	char* ___Name_0;
 	Sprite_t280657092 * ___Logo_1;
-	int32_t ___Level_2;
-	int32_t ___Level_up_3;
+	Sprite_t280657092 * ___Shirt_2;
+	int32_t ___Level_3;
+	int32_t ___Level_up_4;
 };
 // Native definition for COM marshalling of Card_door_monster
 struct Card_door_monster_t3388216757_marshaled_com
 {
 	Il2CppChar* ___Name_0;
 	Sprite_t280657092 * ___Logo_1;
-	int32_t ___Level_2;
-	int32_t ___Level_up_3;
+	Sprite_t280657092 * ___Shirt_2;
+	int32_t ___Level_3;
+	int32_t ___Level_up_4;
 };
 #endif // CARD_DOOR_MONSTER_T3388216757_H
 #ifndef CARD_TREASURE_BONUS_T3040411019_H
@@ -5192,6 +5205,8 @@ public:
 	Sprite_t280657092 * ___Logo_1;
 	// System.Int32 Card_treasure_bonus::Bonus
 	int32_t ___Bonus_2;
+	// UnityEngine.Sprite Card_treasure_bonus::Shirt
+	Sprite_t280657092 * ___Shirt_3;
 
 public:
 	inline static int32_t get_offset_of_Name_0() { return static_cast<int32_t>(offsetof(Card_treasure_bonus_t3040411019, ___Name_0)); }
@@ -5219,6 +5234,15 @@ public:
 	{
 		___Bonus_2 = value;
 	}
+
+	inline static int32_t get_offset_of_Shirt_3() { return static_cast<int32_t>(offsetof(Card_treasure_bonus_t3040411019, ___Shirt_3)); }
+	inline Sprite_t280657092 * get_Shirt_3() const { return ___Shirt_3; }
+	inline Sprite_t280657092 ** get_address_of_Shirt_3() { return &___Shirt_3; }
+	inline void set_Shirt_3(Sprite_t280657092 * value)
+	{
+		___Shirt_3 = value;
+		Il2CppCodeGenWriteBarrier((&___Shirt_3), value);
+	}
 };
 
 #ifdef __clang__
@@ -5230,6 +5254,7 @@ struct Card_treasure_bonus_t3040411019_marshaled_pinvoke
 	char* ___Name_0;
 	Sprite_t280657092 * ___Logo_1;
 	int32_t ___Bonus_2;
+	Sprite_t280657092 * ___Shirt_3;
 };
 // Native definition for COM marshalling of Card_treasure_bonus
 struct Card_treasure_bonus_t3040411019_marshaled_com
@@ -5237,6 +5262,7 @@ struct Card_treasure_bonus_t3040411019_marshaled_com
 	Il2CppChar* ___Name_0;
 	Sprite_t280657092 * ___Logo_1;
 	int32_t ___Bonus_2;
+	Sprite_t280657092 * ___Shirt_3;
 };
 #endif // CARD_TREASURE_BONUS_T3040411019_H
 #ifndef XPATHNODEREF_T3498189018_H

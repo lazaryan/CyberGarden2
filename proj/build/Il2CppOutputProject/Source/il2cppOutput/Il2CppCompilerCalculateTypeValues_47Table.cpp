@@ -294,6 +294,34 @@ public:
 public:
 };
 
+struct DataBase_t2832599879_StaticFields
+{
+public:
+	// System.String DataBase::sprites_door
+	String_t* ___sprites_door_1;
+	// System.String DataBase::sprites_treasure
+	String_t* ___sprites_treasure_2;
+
+public:
+	inline static int32_t get_offset_of_sprites_door_1() { return static_cast<int32_t>(offsetof(DataBase_t2832599879_StaticFields, ___sprites_door_1)); }
+	inline String_t* get_sprites_door_1() const { return ___sprites_door_1; }
+	inline String_t** get_address_of_sprites_door_1() { return &___sprites_door_1; }
+	inline void set_sprites_door_1(String_t* value)
+	{
+		___sprites_door_1 = value;
+		Il2CppCodeGenWriteBarrier((&___sprites_door_1), value);
+	}
+
+	inline static int32_t get_offset_of_sprites_treasure_2() { return static_cast<int32_t>(offsetof(DataBase_t2832599879_StaticFields, ___sprites_treasure_2)); }
+	inline String_t* get_sprites_treasure_2() const { return ___sprites_treasure_2; }
+	inline String_t** get_address_of_sprites_treasure_2() { return &___sprites_treasure_2; }
+	inline void set_sprites_treasure_2(String_t* value)
+	{
+		___sprites_treasure_2 = value;
+		Il2CppCodeGenWriteBarrier((&___sprites_treasure_2), value);
+	}
+};
+
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -1866,10 +1894,12 @@ public:
 	String_t* ___Name_0;
 	// UnityEngine.Sprite Card_door_monster::Logo
 	Sprite_t280657092 * ___Logo_1;
+	// UnityEngine.Sprite Card_door_monster::Shirt
+	Sprite_t280657092 * ___Shirt_2;
 	// System.Int32 Card_door_monster::Level
-	int32_t ___Level_2;
+	int32_t ___Level_3;
 	// System.Int32 Card_door_monster::Level_up
-	int32_t ___Level_up_3;
+	int32_t ___Level_up_4;
 
 public:
 	inline static int32_t get_offset_of_Name_0() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Name_0)); }
@@ -1890,20 +1920,29 @@ public:
 		Il2CppCodeGenWriteBarrier((&___Logo_1), value);
 	}
 
-	inline static int32_t get_offset_of_Level_2() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Level_2)); }
-	inline int32_t get_Level_2() const { return ___Level_2; }
-	inline int32_t* get_address_of_Level_2() { return &___Level_2; }
-	inline void set_Level_2(int32_t value)
+	inline static int32_t get_offset_of_Shirt_2() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Shirt_2)); }
+	inline Sprite_t280657092 * get_Shirt_2() const { return ___Shirt_2; }
+	inline Sprite_t280657092 ** get_address_of_Shirt_2() { return &___Shirt_2; }
+	inline void set_Shirt_2(Sprite_t280657092 * value)
 	{
-		___Level_2 = value;
+		___Shirt_2 = value;
+		Il2CppCodeGenWriteBarrier((&___Shirt_2), value);
 	}
 
-	inline static int32_t get_offset_of_Level_up_3() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Level_up_3)); }
-	inline int32_t get_Level_up_3() const { return ___Level_up_3; }
-	inline int32_t* get_address_of_Level_up_3() { return &___Level_up_3; }
-	inline void set_Level_up_3(int32_t value)
+	inline static int32_t get_offset_of_Level_3() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Level_3)); }
+	inline int32_t get_Level_3() const { return ___Level_3; }
+	inline int32_t* get_address_of_Level_3() { return &___Level_3; }
+	inline void set_Level_3(int32_t value)
 	{
-		___Level_up_3 = value;
+		___Level_3 = value;
+	}
+
+	inline static int32_t get_offset_of_Level_up_4() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Level_up_4)); }
+	inline int32_t get_Level_up_4() const { return ___Level_up_4; }
+	inline int32_t* get_address_of_Level_up_4() { return &___Level_up_4; }
+	inline void set_Level_up_4(int32_t value)
+	{
+		___Level_up_4 = value;
 	}
 };
 
@@ -1915,16 +1954,18 @@ struct Card_door_monster_t3388216757_marshaled_pinvoke
 {
 	char* ___Name_0;
 	Sprite_t280657092 * ___Logo_1;
-	int32_t ___Level_2;
-	int32_t ___Level_up_3;
+	Sprite_t280657092 * ___Shirt_2;
+	int32_t ___Level_3;
+	int32_t ___Level_up_4;
 };
 // Native definition for COM marshalling of Card_door_monster
 struct Card_door_monster_t3388216757_marshaled_com
 {
 	Il2CppChar* ___Name_0;
 	Sprite_t280657092 * ___Logo_1;
-	int32_t ___Level_2;
-	int32_t ___Level_up_3;
+	Sprite_t280657092 * ___Shirt_2;
+	int32_t ___Level_3;
+	int32_t ___Level_up_4;
 };
 #endif // CARD_DOOR_MONSTER_T3388216757_H
 #ifndef CARD_TREASURE_BONUS_T3040411019_H
@@ -1945,6 +1986,8 @@ public:
 	Sprite_t280657092 * ___Logo_1;
 	// System.Int32 Card_treasure_bonus::Bonus
 	int32_t ___Bonus_2;
+	// UnityEngine.Sprite Card_treasure_bonus::Shirt
+	Sprite_t280657092 * ___Shirt_3;
 
 public:
 	inline static int32_t get_offset_of_Name_0() { return static_cast<int32_t>(offsetof(Card_treasure_bonus_t3040411019, ___Name_0)); }
@@ -1972,6 +2015,15 @@ public:
 	{
 		___Bonus_2 = value;
 	}
+
+	inline static int32_t get_offset_of_Shirt_3() { return static_cast<int32_t>(offsetof(Card_treasure_bonus_t3040411019, ___Shirt_3)); }
+	inline Sprite_t280657092 * get_Shirt_3() const { return ___Shirt_3; }
+	inline Sprite_t280657092 ** get_address_of_Shirt_3() { return &___Shirt_3; }
+	inline void set_Shirt_3(Sprite_t280657092 * value)
+	{
+		___Shirt_3 = value;
+		Il2CppCodeGenWriteBarrier((&___Shirt_3), value);
+	}
 };
 
 #ifdef __clang__
@@ -1983,6 +2035,7 @@ struct Card_treasure_bonus_t3040411019_marshaled_pinvoke
 	char* ___Name_0;
 	Sprite_t280657092 * ___Logo_1;
 	int32_t ___Bonus_2;
+	Sprite_t280657092 * ___Shirt_3;
 };
 // Native definition for COM marshalling of Card_treasure_bonus
 struct Card_treasure_bonus_t3040411019_marshaled_com
@@ -1990,6 +2043,7 @@ struct Card_treasure_bonus_t3040411019_marshaled_com
 	Il2CppChar* ___Name_0;
 	Sprite_t280657092 * ___Logo_1;
 	int32_t ___Bonus_2;
+	Sprite_t280657092 * ___Shirt_3;
 };
 #endif // CARD_TREASURE_BONUS_T3040411019_H
 #ifndef MONOENCODING_T666837952_H
@@ -5126,8 +5180,10 @@ public:
 	Card_door_monster_t3388216757  ____SelfCard_5;
 	// UnityEngine.UI.Image CardInfoScr::Logo
 	Image_t2670269651 * ___Logo_6;
+	// UnityEngine.UI.Image CardInfoScr::Shirt
+	Image_t2670269651 * ___Shirt_7;
 	// TMPro.TextMeshProUGUI CardInfoScr::Name
-	TextMeshProUGUI_t529313277 * ___Name_7;
+	TextMeshProUGUI_t529313277 * ___Name_8;
 
 public:
 	inline static int32_t get_offset_of_SelfCard_4() { return static_cast<int32_t>(offsetof(CardInfoScr_t2865403909, ___SelfCard_4)); }
@@ -5155,13 +5211,22 @@ public:
 		Il2CppCodeGenWriteBarrier((&___Logo_6), value);
 	}
 
-	inline static int32_t get_offset_of_Name_7() { return static_cast<int32_t>(offsetof(CardInfoScr_t2865403909, ___Name_7)); }
-	inline TextMeshProUGUI_t529313277 * get_Name_7() const { return ___Name_7; }
-	inline TextMeshProUGUI_t529313277 ** get_address_of_Name_7() { return &___Name_7; }
-	inline void set_Name_7(TextMeshProUGUI_t529313277 * value)
+	inline static int32_t get_offset_of_Shirt_7() { return static_cast<int32_t>(offsetof(CardInfoScr_t2865403909, ___Shirt_7)); }
+	inline Image_t2670269651 * get_Shirt_7() const { return ___Shirt_7; }
+	inline Image_t2670269651 ** get_address_of_Shirt_7() { return &___Shirt_7; }
+	inline void set_Shirt_7(Image_t2670269651 * value)
 	{
-		___Name_7 = value;
-		Il2CppCodeGenWriteBarrier((&___Name_7), value);
+		___Shirt_7 = value;
+		Il2CppCodeGenWriteBarrier((&___Shirt_7), value);
+	}
+
+	inline static int32_t get_offset_of_Name_8() { return static_cast<int32_t>(offsetof(CardInfoScr_t2865403909, ___Name_8)); }
+	inline TextMeshProUGUI_t529313277 * get_Name_8() const { return ___Name_8; }
+	inline TextMeshProUGUI_t529313277 ** get_address_of_Name_8() { return &___Name_8; }
+	inline void set_Name_8(TextMeshProUGUI_t529313277 * value)
+	{
+		___Name_8 = value;
+		Il2CppCodeGenWriteBarrier((&___Name_8), value);
 	}
 };
 
@@ -7986,27 +8051,30 @@ extern const int32_t g_FieldOffsetTable4736[4] =
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4737 = { sizeof (U3CModuleU3E_t692745568), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4738 = { sizeof (CardInfoScr_t2865403909), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4738[4] = 
+extern const int32_t g_FieldOffsetTable4738[5] = 
 {
 	CardInfoScr_t2865403909::get_offset_of_SelfCard_4(),
 	CardInfoScr_t2865403909::get_offset_of__SelfCard_5(),
 	CardInfoScr_t2865403909::get_offset_of_Logo_6(),
-	CardInfoScr_t2865403909::get_offset_of_Name_7(),
+	CardInfoScr_t2865403909::get_offset_of_Shirt_7(),
+	CardInfoScr_t2865403909::get_offset_of_Name_8(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4739 = { sizeof (Card_door_monster_t3388216757)+ sizeof (RuntimeObject), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4739[4] = 
+extern const int32_t g_FieldOffsetTable4739[5] = 
 {
 	Card_door_monster_t3388216757::get_offset_of_Name_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Card_door_monster_t3388216757::get_offset_of_Logo_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	Card_door_monster_t3388216757::get_offset_of_Level_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	Card_door_monster_t3388216757::get_offset_of_Level_up_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	Card_door_monster_t3388216757::get_offset_of_Shirt_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	Card_door_monster_t3388216757::get_offset_of_Level_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	Card_door_monster_t3388216757::get_offset_of_Level_up_4() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4740 = { sizeof (Card_treasure_bonus_t3040411019)+ sizeof (RuntimeObject), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4740[3] = 
+extern const int32_t g_FieldOffsetTable4740[4] = 
 {
 	Card_treasure_bonus_t3040411019::get_offset_of_Name_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Card_treasure_bonus_t3040411019::get_offset_of_Logo_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Card_treasure_bonus_t3040411019::get_offset_of_Bonus_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	Card_treasure_bonus_t3040411019::get_offset_of_Shirt_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4741 = { sizeof (CardManager_t965073005), -1, sizeof(CardManager_t965073005_StaticFields), 0 };
 extern const int32_t g_FieldOffsetTable4741[2] = 
@@ -8015,10 +8083,12 @@ extern const int32_t g_FieldOffsetTable4741[2] =
 	CardManager_t965073005_StaticFields::get_offset_of__Cards_treasure_bonus_1(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4742 = { sizeof (CardManagerScr_t2141160633), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4743 = { sizeof (DataBase_t2832599879), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4743[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4743 = { sizeof (DataBase_t2832599879), -1, sizeof(DataBase_t2832599879_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable4743[3] = 
 {
 	0,
+	DataBase_t2832599879_StaticFields::get_offset_of_sprites_door_1(),
+	DataBase_t2832599879_StaticFields::get_offset_of_sprites_treasure_2(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4744 = { sizeof (CardMovementScr_t3663906856), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable4744[6] = 

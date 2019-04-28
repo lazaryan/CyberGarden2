@@ -684,6 +684,7 @@ extern String_t* _stringLiteral1252906959;
 extern String_t* _stringLiteral1257358466;
 extern String_t* _stringLiteral1283574830;
 extern String_t* _stringLiteral1400318770;
+extern String_t* _stringLiteral1419608450;
 extern String_t* _stringLiteral142579402;
 extern String_t* _stringLiteral1493466493;
 extern String_t* _stringLiteral1502128262;
@@ -691,6 +692,7 @@ extern String_t* _stringLiteral1512779662;
 extern String_t* _stringLiteral1556977571;
 extern String_t* _stringLiteral1620856494;
 extern String_t* _stringLiteral1634384631;
+extern String_t* _stringLiteral1685460202;
 extern String_t* _stringLiteral1712397492;
 extern String_t* _stringLiteral1891098395;
 extern String_t* _stringLiteral1957967135;
@@ -703,11 +705,10 @@ extern String_t* _stringLiteral2189589878;
 extern String_t* _stringLiteral228667575;
 extern String_t* _stringLiteral229317972;
 extern String_t* _stringLiteral2323074440;
+extern String_t* _stringLiteral2342388868;
 extern String_t* _stringLiteral2356021499;
-extern String_t* _stringLiteral2368291812;
 extern String_t* _stringLiteral2397496318;
 extern String_t* _stringLiteral2423929329;
-extern String_t* _stringLiteral2428882066;
 extern String_t* _stringLiteral2456710566;
 extern String_t* _stringLiteral2579201553;
 extern String_t* _stringLiteral2581697294;
@@ -727,6 +728,7 @@ extern String_t* _stringLiteral3074126019;
 extern String_t* _stringLiteral3110761919;
 extern String_t* _stringLiteral314137577;
 extern String_t* _stringLiteral314137578;
+extern String_t* _stringLiteral3142144500;
 extern String_t* _stringLiteral3154765094;
 extern String_t* _stringLiteral3220192365;
 extern String_t* _stringLiteral3242953711;
@@ -748,6 +750,7 @@ extern String_t* _stringLiteral3549878295;
 extern String_t* _stringLiteral3629899349;
 extern String_t* _stringLiteral3641001163;
 extern String_t* _stringLiteral365775221;
+extern String_t* _stringLiteral3683732790;
 extern String_t* _stringLiteral3686734072;
 extern String_t* _stringLiteral3739362343;
 extern String_t* _stringLiteral3791183377;
@@ -756,7 +759,6 @@ extern String_t* _stringLiteral3944103709;
 extern String_t* _stringLiteral4032328464;
 extern String_t* _stringLiteral404939405;
 extern String_t* _stringLiteral404939406;
-extern String_t* _stringLiteral4074661255;
 extern String_t* _stringLiteral4104855683;
 extern String_t* _stringLiteral4105884426;
 extern String_t* _stringLiteral421855942;
@@ -764,16 +766,17 @@ extern String_t* _stringLiteral4277023061;
 extern String_t* _stringLiteral4291879027;
 extern String_t* _stringLiteral4291944563;
 extern String_t* _stringLiteral44894389;
-extern String_t* _stringLiteral625912212;
 extern String_t* _stringLiteral62725243;
 extern String_t* _stringLiteral652882223;
 extern String_t* _stringLiteral674676282;
+extern String_t* _stringLiteral750005253;
 extern String_t* _stringLiteral757602046;
 extern String_t* _stringLiteral780708881;
 extern String_t* _stringLiteral787928648;
 extern String_t* _stringLiteral799830170;
 extern String_t* _stringLiteral811300124;
 extern String_t* _stringLiteral877140559;
+extern String_t* _stringLiteral900836271;
 extern String_t* _stringLiteral988731871;
 extern const RuntimeMethod* Action_1__ctor_m1040786011_RuntimeMethod_var;
 extern const RuntimeMethod* ChatController_AddToChatOutput_m191672758_RuntimeMethod_var;
@@ -892,8 +895,8 @@ extern const uint32_t CardMovementScr_Awake_m2328087414_MetadataUsageId;
 extern const uint32_t CardMovementScr_OnBeginDrag_m2531458173_MetadataUsageId;
 extern const uint32_t CardMovementScr_OnDrag_m1029339640_MetadataUsageId;
 extern const uint32_t CardMovementScr_OnEndDrag_m1228072814_MetadataUsageId;
-extern const uint32_t Card_door_monster__ctor_m1993282106_MetadataUsageId;
-extern const uint32_t Card_treasure_bonus__ctor_m826272411_MetadataUsageId;
+extern const uint32_t Card_door_monster__ctor_m815241072_MetadataUsageId;
+extern const uint32_t Card_treasure_bonus__ctor_m1977542925_MetadataUsageId;
 extern const uint32_t CharacterSelectionEvent__ctor_m1482022576_MetadataUsageId;
 extern const uint32_t ChatController_AddToChatOutput_m191672758_MetadataUsageId;
 extern const uint32_t ChatController_OnDisable_m198214062_MetadataUsageId;
@@ -901,6 +904,7 @@ extern const uint32_t ChatController_OnEnable_m2623215102_MetadataUsageId;
 extern const uint32_t DataBase_CreateTable_m2372400155_MetadataUsageId;
 extern const uint32_t DataBase_SelectDataDoor_m2264027440_MetadataUsageId;
 extern const uint32_t DataBase_SelectDataTresure_m951135376_MetadataUsageId;
+extern const uint32_t DataBase__cctor_m4248120672_MetadataUsageId;
 extern const uint32_t DataBase_addCardDoor_m4104125901_MetadataUsageId;
 extern const uint32_t DataBase_addCardTresure_m476306503_MetadataUsageId;
 extern const uint32_t DataBase_createDB_m1510441006_MetadataUsageId;
@@ -1160,6 +1164,34 @@ struct  DataBase_t2832599879  : public RuntimeObject
 public:
 
 public:
+};
+
+struct DataBase_t2832599879_StaticFields
+{
+public:
+	// System.String DataBase::sprites_door
+	String_t* ___sprites_door_1;
+	// System.String DataBase::sprites_treasure
+	String_t* ___sprites_treasure_2;
+
+public:
+	inline static int32_t get_offset_of_sprites_door_1() { return static_cast<int32_t>(offsetof(DataBase_t2832599879_StaticFields, ___sprites_door_1)); }
+	inline String_t* get_sprites_door_1() const { return ___sprites_door_1; }
+	inline String_t** get_address_of_sprites_door_1() { return &___sprites_door_1; }
+	inline void set_sprites_door_1(String_t* value)
+	{
+		___sprites_door_1 = value;
+		Il2CppCodeGenWriteBarrier((&___sprites_door_1), value);
+	}
+
+	inline static int32_t get_offset_of_sprites_treasure_2() { return static_cast<int32_t>(offsetof(DataBase_t2832599879_StaticFields, ___sprites_treasure_2)); }
+	inline String_t* get_sprites_treasure_2() const { return ___sprites_treasure_2; }
+	inline String_t** get_address_of_sprites_treasure_2() { return &___sprites_treasure_2; }
+	inline void set_sprites_treasure_2(String_t* value)
+	{
+		___sprites_treasure_2 = value;
+		Il2CppCodeGenWriteBarrier((&___sprites_treasure_2), value);
+	}
 };
 
 #ifdef __clang__
@@ -4104,10 +4136,12 @@ public:
 	String_t* ___Name_0;
 	// UnityEngine.Sprite Card_door_monster::Logo
 	Sprite_t280657092 * ___Logo_1;
+	// UnityEngine.Sprite Card_door_monster::Shirt
+	Sprite_t280657092 * ___Shirt_2;
 	// System.Int32 Card_door_monster::Level
-	int32_t ___Level_2;
+	int32_t ___Level_3;
 	// System.Int32 Card_door_monster::Level_up
-	int32_t ___Level_up_3;
+	int32_t ___Level_up_4;
 
 public:
 	inline static int32_t get_offset_of_Name_0() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Name_0)); }
@@ -4128,20 +4162,29 @@ public:
 		Il2CppCodeGenWriteBarrier((&___Logo_1), value);
 	}
 
-	inline static int32_t get_offset_of_Level_2() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Level_2)); }
-	inline int32_t get_Level_2() const { return ___Level_2; }
-	inline int32_t* get_address_of_Level_2() { return &___Level_2; }
-	inline void set_Level_2(int32_t value)
+	inline static int32_t get_offset_of_Shirt_2() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Shirt_2)); }
+	inline Sprite_t280657092 * get_Shirt_2() const { return ___Shirt_2; }
+	inline Sprite_t280657092 ** get_address_of_Shirt_2() { return &___Shirt_2; }
+	inline void set_Shirt_2(Sprite_t280657092 * value)
 	{
-		___Level_2 = value;
+		___Shirt_2 = value;
+		Il2CppCodeGenWriteBarrier((&___Shirt_2), value);
 	}
 
-	inline static int32_t get_offset_of_Level_up_3() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Level_up_3)); }
-	inline int32_t get_Level_up_3() const { return ___Level_up_3; }
-	inline int32_t* get_address_of_Level_up_3() { return &___Level_up_3; }
-	inline void set_Level_up_3(int32_t value)
+	inline static int32_t get_offset_of_Level_3() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Level_3)); }
+	inline int32_t get_Level_3() const { return ___Level_3; }
+	inline int32_t* get_address_of_Level_3() { return &___Level_3; }
+	inline void set_Level_3(int32_t value)
 	{
-		___Level_up_3 = value;
+		___Level_3 = value;
+	}
+
+	inline static int32_t get_offset_of_Level_up_4() { return static_cast<int32_t>(offsetof(Card_door_monster_t3388216757, ___Level_up_4)); }
+	inline int32_t get_Level_up_4() const { return ___Level_up_4; }
+	inline int32_t* get_address_of_Level_up_4() { return &___Level_up_4; }
+	inline void set_Level_up_4(int32_t value)
+	{
+		___Level_up_4 = value;
 	}
 };
 
@@ -4153,16 +4196,18 @@ struct Card_door_monster_t3388216757_marshaled_pinvoke
 {
 	char* ___Name_0;
 	Sprite_t280657092 * ___Logo_1;
-	int32_t ___Level_2;
-	int32_t ___Level_up_3;
+	Sprite_t280657092 * ___Shirt_2;
+	int32_t ___Level_3;
+	int32_t ___Level_up_4;
 };
 // Native definition for COM marshalling of Card_door_monster
 struct Card_door_monster_t3388216757_marshaled_com
 {
 	Il2CppChar* ___Name_0;
 	Sprite_t280657092 * ___Logo_1;
-	int32_t ___Level_2;
-	int32_t ___Level_up_3;
+	Sprite_t280657092 * ___Shirt_2;
+	int32_t ___Level_3;
+	int32_t ___Level_up_4;
 };
 #endif // CARD_DOOR_MONSTER_T3388216757_H
 #ifndef CARD_TREASURE_BONUS_T3040411019_H
@@ -4183,6 +4228,8 @@ public:
 	Sprite_t280657092 * ___Logo_1;
 	// System.Int32 Card_treasure_bonus::Bonus
 	int32_t ___Bonus_2;
+	// UnityEngine.Sprite Card_treasure_bonus::Shirt
+	Sprite_t280657092 * ___Shirt_3;
 
 public:
 	inline static int32_t get_offset_of_Name_0() { return static_cast<int32_t>(offsetof(Card_treasure_bonus_t3040411019, ___Name_0)); }
@@ -4210,6 +4257,15 @@ public:
 	{
 		___Bonus_2 = value;
 	}
+
+	inline static int32_t get_offset_of_Shirt_3() { return static_cast<int32_t>(offsetof(Card_treasure_bonus_t3040411019, ___Shirt_3)); }
+	inline Sprite_t280657092 * get_Shirt_3() const { return ___Shirt_3; }
+	inline Sprite_t280657092 ** get_address_of_Shirt_3() { return &___Shirt_3; }
+	inline void set_Shirt_3(Sprite_t280657092 * value)
+	{
+		___Shirt_3 = value;
+		Il2CppCodeGenWriteBarrier((&___Shirt_3), value);
+	}
 };
 
 #ifdef __clang__
@@ -4221,6 +4277,7 @@ struct Card_treasure_bonus_t3040411019_marshaled_pinvoke
 	char* ___Name_0;
 	Sprite_t280657092 * ___Logo_1;
 	int32_t ___Bonus_2;
+	Sprite_t280657092 * ___Shirt_3;
 };
 // Native definition for COM marshalling of Card_treasure_bonus
 struct Card_treasure_bonus_t3040411019_marshaled_com
@@ -4228,6 +4285,7 @@ struct Card_treasure_bonus_t3040411019_marshaled_com
 	Il2CppChar* ___Name_0;
 	Sprite_t280657092 * ___Logo_1;
 	int32_t ___Bonus_2;
+	Sprite_t280657092 * ___Shirt_3;
 };
 #endif // CARD_TREASURE_BONUS_T3040411019_H
 #ifndef BOOLEAN_T97287965_H
@@ -13581,8 +13639,10 @@ public:
 	Card_door_monster_t3388216757  ____SelfCard_5;
 	// UnityEngine.UI.Image CardInfoScr::Logo
 	Image_t2670269651 * ___Logo_6;
+	// UnityEngine.UI.Image CardInfoScr::Shirt
+	Image_t2670269651 * ___Shirt_7;
 	// TMPro.TextMeshProUGUI CardInfoScr::Name
-	TextMeshProUGUI_t529313277 * ___Name_7;
+	TextMeshProUGUI_t529313277 * ___Name_8;
 
 public:
 	inline static int32_t get_offset_of_SelfCard_4() { return static_cast<int32_t>(offsetof(CardInfoScr_t2865403909, ___SelfCard_4)); }
@@ -13610,13 +13670,22 @@ public:
 		Il2CppCodeGenWriteBarrier((&___Logo_6), value);
 	}
 
-	inline static int32_t get_offset_of_Name_7() { return static_cast<int32_t>(offsetof(CardInfoScr_t2865403909, ___Name_7)); }
-	inline TextMeshProUGUI_t529313277 * get_Name_7() const { return ___Name_7; }
-	inline TextMeshProUGUI_t529313277 ** get_address_of_Name_7() { return &___Name_7; }
-	inline void set_Name_7(TextMeshProUGUI_t529313277 * value)
+	inline static int32_t get_offset_of_Shirt_7() { return static_cast<int32_t>(offsetof(CardInfoScr_t2865403909, ___Shirt_7)); }
+	inline Image_t2670269651 * get_Shirt_7() const { return ___Shirt_7; }
+	inline Image_t2670269651 ** get_address_of_Shirt_7() { return &___Shirt_7; }
+	inline void set_Shirt_7(Image_t2670269651 * value)
 	{
-		___Name_7 = value;
-		Il2CppCodeGenWriteBarrier((&___Name_7), value);
+		___Shirt_7 = value;
+		Il2CppCodeGenWriteBarrier((&___Shirt_7), value);
+	}
+
+	inline static int32_t get_offset_of_Name_8() { return static_cast<int32_t>(offsetof(CardInfoScr_t2865403909, ___Name_8)); }
+	inline TextMeshProUGUI_t529313277 * get_Name_8() const { return ___Name_8; }
+	inline TextMeshProUGUI_t529313277 ** get_address_of_Name_8() { return &___Name_8; }
+	inline void set_Name_8(TextMeshProUGUI_t529313277 * value)
+	{
+		___Name_8 = value;
+		Il2CppCodeGenWriteBarrier((&___Name_8), value);
 	}
 };
 
@@ -21497,6 +21566,12 @@ extern "C" IL2CPP_METHOD_ATTR void UnityEvent_3__ctor_m3959046166_gshared (Unity
 
 // System.Void UnityEngine.UI.Image::set_sprite(UnityEngine.Sprite)
 extern "C" IL2CPP_METHOD_ATTR void Image_set_sprite_m2369174689 (Image_t2670269651 * __this, Sprite_t280657092 * p0, const RuntimeMethod* method);
+// UnityEngine.Transform UnityEngine.Component::get_transform()
+extern "C" IL2CPP_METHOD_ATTR Transform_t3600365921 * Component_get_transform_m3162698980 (Component_t1923634451 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Vector3::.ctor(System.Single,System.Single)
+extern "C" IL2CPP_METHOD_ATTR void Vector3__ctor_m1719387948 (Vector3_t3722313464 * __this, float p0, float p1, const RuntimeMethod* method);
+// System.Void UnityEngine.Transform::set_localScale(UnityEngine.Vector3)
+extern "C" IL2CPP_METHOD_ATTR void Transform_set_localScale_m3053443106 (Transform_t3600365921 * __this, Vector3_t3722313464  p0, const RuntimeMethod* method);
 // System.Void UnityEngine.UI.Image::set_preserveAspect(System.Boolean)
 extern "C" IL2CPP_METHOD_ATTR void Image_set_preserveAspect_m769358756 (Image_t2670269651 * __this, bool p0, const RuntimeMethod* method);
 // System.Void UnityEngine.MonoBehaviour::.ctor()
@@ -21523,8 +21598,6 @@ extern "C" IL2CPP_METHOD_ATTR List_1_t217518465 * DataBase_getTreasure_m18684706
 extern "C" IL2CPP_METHOD_ATTR CameraU5BU5D_t1709987734* Camera_get_allCameras_m2948461600 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
 // UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
 extern "C" IL2CPP_METHOD_ATTR GameObject_t1113636619 * GameObject_Find_m2032535176 (RuntimeObject * __this /* static, unused */, String_t* p0, const RuntimeMethod* method);
-// UnityEngine.Transform UnityEngine.Component::get_transform()
-extern "C" IL2CPP_METHOD_ATTR Transform_t3600365921 * Component_get_transform_m3162698980 (Component_t1923634451 * __this, const RuntimeMethod* method);
 // UnityEngine.Vector3 UnityEngine.Transform::get_position()
 extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Transform_get_position_m36019626 (Transform_t3600365921 * __this, const RuntimeMethod* method);
 // UnityEngine.Vector2 UnityEngine.EventSystems.PointerEventData::get_position()
@@ -21565,8 +21638,6 @@ extern "C" IL2CPP_METHOD_ATTR void Transform_set_position_m3387557959 (Transform
 extern "C" IL2CPP_METHOD_ATTR bool Object_op_Inequality_m4071470834 (RuntimeObject * __this /* static, unused */, Object_t631007953 * p0, Object_t631007953 * p1, const RuntimeMethod* method);
 // System.Void CardMovementScr::CheckPosition()
 extern "C" IL2CPP_METHOD_ATTR void CardMovementScr_CheckPosition_m1113817071 (CardMovementScr_t3663906856 * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.Vector3::.ctor(System.Single,System.Single)
-extern "C" IL2CPP_METHOD_ATTR void Vector3__ctor_m1719387948 (Vector3_t3722313464 * __this, float p0, float p1, const RuntimeMethod* method);
 // System.Void UnityEngine.Transform::set_localPosition(UnityEngine.Vector3)
 extern "C" IL2CPP_METHOD_ATTR void Transform_set_localPosition_m4128471975 (Transform_t3600365921 * __this, Vector3_t3722313464  p0, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Transform::get_childCount()
@@ -21578,10 +21649,10 @@ inline Sprite_t280657092 * Resources_Load_TisSprite_t280657092_m4144667290 (Runt
 {
 	return ((  Sprite_t280657092 * (*) (RuntimeObject * /* static, unused */, String_t*, const RuntimeMethod*))Resources_Load_TisRuntimeObject_m276161087_gshared)(__this /* static, unused */, p0, method);
 }
-// System.Void Card_door_monster::.ctor(System.String,System.String,System.Int32,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void Card_door_monster__ctor_m1993282106 (Card_door_monster_t3388216757 * __this, String_t* ___name0, String_t* ___logoPath1, int32_t ___level2, int32_t ___level_up3, const RuntimeMethod* method);
-// System.Void Card_treasure_bonus::.ctor(System.String,System.String,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void Card_treasure_bonus__ctor_m826272411 (Card_treasure_bonus_t3040411019 * __this, String_t* ___name0, String_t* ___logoPath1, int32_t ___bonus2, const RuntimeMethod* method);
+// System.Void Card_door_monster::.ctor(System.String,System.String,System.Int32,System.Int32,System.String)
+extern "C" IL2CPP_METHOD_ATTR void Card_door_monster__ctor_m815241072 (Card_door_monster_t3388216757 * __this, String_t* ___name0, String_t* ___logoPath1, int32_t ___level2, int32_t ___level_up3, String_t* ___shirtrPath4, const RuntimeMethod* method);
+// System.Void Card_treasure_bonus::.ctor(System.String,System.String,System.Int32,System.String)
+extern "C" IL2CPP_METHOD_ATTR void Card_treasure_bonus__ctor_m1977542925 (Card_treasure_bonus_t3040411019 * __this, String_t* ___name0, String_t* ___logoPath1, int32_t ___bonus2, String_t* ___shirtrPath3, const RuntimeMethod* method);
 // TMPro.TMP_InputField/SubmitEvent TMPro.TMP_InputField::get_onSubmit()
 extern "C" IL2CPP_METHOD_ATTR SubmitEvent_t1343580625 * TMP_InputField_get_onSubmit_m3857915887 (TMP_InputField_t1099764886 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Events.UnityAction`1<System.String>::.ctor(System.Object,System.IntPtr)
@@ -21890,8 +21961,6 @@ inline Canvas_t3310196443 * GameObject_AddComponent_TisCanvas_t3310196443_m28488
 extern "C" IL2CPP_METHOD_ATTR Camera_t4157153871 * Camera_get_main_m3643453163 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
 // System.Void UnityEngine.Canvas::set_worldCamera(UnityEngine.Camera)
 extern "C" IL2CPP_METHOD_ATTR void Canvas_set_worldCamera_m1964154654 (Canvas_t3310196443 * __this, Camera_t4157153871 * p0, const RuntimeMethod* method);
-// System.Void UnityEngine.Transform::set_localScale(UnityEngine.Vector3)
-extern "C" IL2CPP_METHOD_ATTR void Transform_set_localScale_m3053443106 (Transform_t3600365921 * __this, Vector3_t3722313464  p0, const RuntimeMethod* method);
 // System.Void UnityEngine.Transform::SetParent(UnityEngine.Transform,System.Boolean)
 extern "C" IL2CPP_METHOD_ATTR void Transform_SetParent_m273471670 (Transform_t3600365921 * __this, Transform_t3600365921 * p0, bool p1, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Screen::get_height()
@@ -22461,6 +22530,21 @@ extern "C" IL2CPP_METHOD_ATTR void CardInfoScr_HideCardInfo_m2011948473 (CardInf
 		Image_t2670269651 * L_0 = __this->get_Logo_6();
 		NullCheck(L_0);
 		Image_set_sprite_m2369174689(L_0, (Sprite_t280657092 *)NULL, /*hidden argument*/NULL);
+		// Logo.transform.localScale = new Vector3 (0, 0);
+		Image_t2670269651 * L_1 = __this->get_Logo_6();
+		NullCheck(L_1);
+		Transform_t3600365921 * L_2 = Component_get_transform_m3162698980(L_1, /*hidden argument*/NULL);
+		Vector3_t3722313464  L_3;
+		memset(&L_3, 0, sizeof(L_3));
+		Vector3__ctor_m1719387948((&L_3), (0.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Transform_set_localScale_m3053443106(L_2, L_3, /*hidden argument*/NULL);
+		// Shirt.sprite = card.Shirt;
+		Image_t2670269651 * L_4 = __this->get_Shirt_7();
+		Card_treasure_bonus_t3040411019  L_5 = ___card0;
+		Sprite_t280657092 * L_6 = L_5.get_Shirt_3();
+		NullCheck(L_4);
+		Image_set_sprite_m2369174689(L_4, L_6, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -22473,6 +22557,21 @@ extern "C" IL2CPP_METHOD_ATTR void CardInfoScr_HideCardInfo_d_m4051546090 (CardI
 		Image_t2670269651 * L_0 = __this->get_Logo_6();
 		NullCheck(L_0);
 		Image_set_sprite_m2369174689(L_0, (Sprite_t280657092 *)NULL, /*hidden argument*/NULL);
+		// Logo.transform.localScale = new Vector3(0, 0);
+		Image_t2670269651 * L_1 = __this->get_Logo_6();
+		NullCheck(L_1);
+		Transform_t3600365921 * L_2 = Component_get_transform_m3162698980(L_1, /*hidden argument*/NULL);
+		Vector3_t3722313464  L_3;
+		memset(&L_3, 0, sizeof(L_3));
+		Vector3__ctor_m1719387948((&L_3), (0.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Transform_set_localScale_m3053443106(L_2, L_3, /*hidden argument*/NULL);
+		// Shirt.sprite = card.Shirt;
+		Image_t2670269651 * L_4 = __this->get_Shirt_7();
+		Card_door_monster_t3388216757  L_5 = ___card0;
+		Sprite_t280657092 * L_6 = L_5.get_Shirt_2();
+		NullCheck(L_4);
+		Image_set_sprite_m2369174689(L_4, L_6, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -22484,16 +22583,34 @@ extern "C" IL2CPP_METHOD_ATTR void CardInfoScr_ShowCardInfo_d_m2460362706 (CardI
 		// _SelfCard = card;
 		Card_door_monster_t3388216757  L_0 = ___card0;
 		__this->set__SelfCard_5(L_0);
-		// Logo.sprite = card.Logo;
+		// Logo.transform.localScale = new Vector3(1, 1);
 		Image_t2670269651 * L_1 = __this->get_Logo_6();
-		Card_door_monster_t3388216757  L_2 = ___card0;
-		Sprite_t280657092 * L_3 = L_2.get_Logo_1();
 		NullCheck(L_1);
-		Image_set_sprite_m2369174689(L_1, L_3, /*hidden argument*/NULL);
-		// Logo.preserveAspect = true;
-		Image_t2670269651 * L_4 = __this->get_Logo_6();
+		Transform_t3600365921 * L_2 = Component_get_transform_m3162698980(L_1, /*hidden argument*/NULL);
+		Vector3_t3722313464  L_3;
+		memset(&L_3, 0, sizeof(L_3));
+		Vector3__ctor_m1719387948((&L_3), (1.0f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Transform_set_localScale_m3053443106(L_2, L_3, /*hidden argument*/NULL);
+		// Shirt.transform.localScale = new Vector3(0, 0);
+		Image_t2670269651 * L_4 = __this->get_Shirt_7();
 		NullCheck(L_4);
-		Image_set_preserveAspect_m769358756(L_4, (bool)1, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_5 = Component_get_transform_m3162698980(L_4, /*hidden argument*/NULL);
+		Vector3_t3722313464  L_6;
+		memset(&L_6, 0, sizeof(L_6));
+		Vector3__ctor_m1719387948((&L_6), (0.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Transform_set_localScale_m3053443106(L_5, L_6, /*hidden argument*/NULL);
+		// Logo.sprite = card.Logo;
+		Image_t2670269651 * L_7 = __this->get_Logo_6();
+		Card_door_monster_t3388216757  L_8 = ___card0;
+		Sprite_t280657092 * L_9 = L_8.get_Logo_1();
+		NullCheck(L_7);
+		Image_set_sprite_m2369174689(L_7, L_9, /*hidden argument*/NULL);
+		// Logo.preserveAspect = true;
+		Image_t2670269651 * L_10 = __this->get_Logo_6();
+		NullCheck(L_10);
+		Image_set_preserveAspect_m769358756(L_10, (bool)1, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -22505,16 +22622,34 @@ extern "C" IL2CPP_METHOD_ATTR void CardInfoScr_ShowCardInfo_m1882347982 (CardInf
 		// SelfCard = card;
 		Card_treasure_bonus_t3040411019  L_0 = ___card0;
 		__this->set_SelfCard_4(L_0);
-		// Logo.sprite = card.Logo;
+		// Logo.transform.localScale = new Vector3(1, 1);
 		Image_t2670269651 * L_1 = __this->get_Logo_6();
-		Card_treasure_bonus_t3040411019  L_2 = ___card0;
-		Sprite_t280657092 * L_3 = L_2.get_Logo_1();
 		NullCheck(L_1);
-		Image_set_sprite_m2369174689(L_1, L_3, /*hidden argument*/NULL);
-		// Logo.preserveAspect = true;
-		Image_t2670269651 * L_4 = __this->get_Logo_6();
+		Transform_t3600365921 * L_2 = Component_get_transform_m3162698980(L_1, /*hidden argument*/NULL);
+		Vector3_t3722313464  L_3;
+		memset(&L_3, 0, sizeof(L_3));
+		Vector3__ctor_m1719387948((&L_3), (1.0f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Transform_set_localScale_m3053443106(L_2, L_3, /*hidden argument*/NULL);
+		// Shirt.transform.localScale = new Vector3(0, 0);
+		Image_t2670269651 * L_4 = __this->get_Shirt_7();
 		NullCheck(L_4);
-		Image_set_preserveAspect_m769358756(L_4, (bool)1, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_5 = Component_get_transform_m3162698980(L_4, /*hidden argument*/NULL);
+		Vector3_t3722313464  L_6;
+		memset(&L_6, 0, sizeof(L_6));
+		Vector3__ctor_m1719387948((&L_6), (0.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Transform_set_localScale_m3053443106(L_5, L_6, /*hidden argument*/NULL);
+		// Logo.sprite = card.Logo;
+		Image_t2670269651 * L_7 = __this->get_Logo_6();
+		Card_treasure_bonus_t3040411019  L_8 = ___card0;
+		Sprite_t280657092 * L_9 = L_8.get_Logo_1();
+		NullCheck(L_7);
+		Image_set_sprite_m2369174689(L_7, L_9, /*hidden argument*/NULL);
+		// Logo.preserveAspect = true;
+		Image_t2670269651 * L_10 = __this->get_Logo_6();
+		NullCheck(L_10);
+		Image_set_preserveAspect_m769358756(L_10, (bool)1, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -23007,13 +23142,13 @@ extern "C" void Card_door_monster_t3388216757_marshal_com_back(const Card_door_m
 extern "C" void Card_door_monster_t3388216757_marshal_com_cleanup(Card_door_monster_t3388216757_marshaled_com& marshaled)
 {
 }
-// System.Void Card_door_monster::.ctor(System.String,System.String,System.Int32,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void Card_door_monster__ctor_m1993282106 (Card_door_monster_t3388216757 * __this, String_t* ___name0, String_t* ___logoPath1, int32_t ___level2, int32_t ___level_up3, const RuntimeMethod* method)
+// System.Void Card_door_monster::.ctor(System.String,System.String,System.Int32,System.Int32,System.String)
+extern "C" IL2CPP_METHOD_ATTR void Card_door_monster__ctor_m815241072 (Card_door_monster_t3388216757 * __this, String_t* ___name0, String_t* ___logoPath1, int32_t ___level2, int32_t ___level_up3, String_t* ___shirtrPath4, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (Card_door_monster__ctor_m1993282106_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Card_door_monster__ctor_m815241072_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -23026,18 +23161,22 @@ extern "C" IL2CPP_METHOD_ATTR void Card_door_monster__ctor_m1993282106 (Card_doo
 		__this->set_Logo_1(L_2);
 		// Level = level;
 		int32_t L_3 = ___level2;
-		__this->set_Level_2(L_3);
+		__this->set_Level_3(L_3);
 		// Level_up = level_up;
 		int32_t L_4 = ___level_up3;
-		__this->set_Level_up_3(L_4);
+		__this->set_Level_up_4(L_4);
+		// Shirt = Resources.Load<Sprite>(shirtrPath);
+		String_t* L_5 = ___shirtrPath4;
+		Sprite_t280657092 * L_6 = Resources_Load_TisSprite_t280657092_m4144667290(NULL /*static, unused*/, L_5, /*hidden argument*/Resources_Load_TisSprite_t280657092_m4144667290_RuntimeMethod_var);
+		__this->set_Shirt_2(L_6);
 		// }
 		return;
 	}
 }
-extern "C"  void Card_door_monster__ctor_m1993282106_AdjustorThunk (RuntimeObject * __this, String_t* ___name0, String_t* ___logoPath1, int32_t ___level2, int32_t ___level_up3, const RuntimeMethod* method)
+extern "C"  void Card_door_monster__ctor_m815241072_AdjustorThunk (RuntimeObject * __this, String_t* ___name0, String_t* ___logoPath1, int32_t ___level2, int32_t ___level_up3, String_t* ___shirtrPath4, const RuntimeMethod* method)
 {
 	Card_door_monster_t3388216757 * _thisAdjusted = reinterpret_cast<Card_door_monster_t3388216757 *>(__this + 1);
-	Card_door_monster__ctor_m1993282106(_thisAdjusted, ___name0, ___logoPath1, ___level2, ___level_up3, method);
+	Card_door_monster__ctor_m815241072(_thisAdjusted, ___name0, ___logoPath1, ___level2, ___level_up3, ___shirtrPath4, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -23077,13 +23216,13 @@ extern "C" void Card_treasure_bonus_t3040411019_marshal_com_back(const Card_trea
 extern "C" void Card_treasure_bonus_t3040411019_marshal_com_cleanup(Card_treasure_bonus_t3040411019_marshaled_com& marshaled)
 {
 }
-// System.Void Card_treasure_bonus::.ctor(System.String,System.String,System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void Card_treasure_bonus__ctor_m826272411 (Card_treasure_bonus_t3040411019 * __this, String_t* ___name0, String_t* ___logoPath1, int32_t ___bonus2, const RuntimeMethod* method)
+// System.Void Card_treasure_bonus::.ctor(System.String,System.String,System.Int32,System.String)
+extern "C" IL2CPP_METHOD_ATTR void Card_treasure_bonus__ctor_m1977542925 (Card_treasure_bonus_t3040411019 * __this, String_t* ___name0, String_t* ___logoPath1, int32_t ___bonus2, String_t* ___shirtrPath3, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (Card_treasure_bonus__ctor_m826272411_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Card_treasure_bonus__ctor_m1977542925_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -23097,14 +23236,18 @@ extern "C" IL2CPP_METHOD_ATTR void Card_treasure_bonus__ctor_m826272411 (Card_tr
 		// Bonus = bonus;
 		int32_t L_3 = ___bonus2;
 		__this->set_Bonus_2(L_3);
+		// Shirt = Resources.Load<Sprite>(shirtrPath);
+		String_t* L_4 = ___shirtrPath3;
+		Sprite_t280657092 * L_5 = Resources_Load_TisSprite_t280657092_m4144667290(NULL /*static, unused*/, L_4, /*hidden argument*/Resources_Load_TisSprite_t280657092_m4144667290_RuntimeMethod_var);
+		__this->set_Shirt_3(L_5);
 		// }
 		return;
 	}
 }
-extern "C"  void Card_treasure_bonus__ctor_m826272411_AdjustorThunk (RuntimeObject * __this, String_t* ___name0, String_t* ___logoPath1, int32_t ___bonus2, const RuntimeMethod* method)
+extern "C"  void Card_treasure_bonus__ctor_m1977542925_AdjustorThunk (RuntimeObject * __this, String_t* ___name0, String_t* ___logoPath1, int32_t ___bonus2, String_t* ___shirtrPath3, const RuntimeMethod* method)
 {
 	Card_treasure_bonus_t3040411019 * _thisAdjusted = reinterpret_cast<Card_treasure_bonus_t3040411019 *>(__this + 1);
-	Card_treasure_bonus__ctor_m826272411(_thisAdjusted, ___name0, ___logoPath1, ___bonus2, method);
+	Card_treasure_bonus__ctor_m1977542925(_thisAdjusted, ___name0, ___logoPath1, ___bonus2, ___shirtrPath3, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -23291,6 +23434,7 @@ extern "C" IL2CPP_METHOD_ATTR void DataBase_start_m1611367701 (DataBase_t2832599
 	}
 	{
 		// createDB();
+		IL2CPP_RUNTIME_CLASS_INIT(DataBase_t2832599879_il2cpp_TypeInfo_var);
 		DataBase_createDB_m1510441006(NULL /*static, unused*/, /*hidden argument*/NULL);
 		// CreateTable();
 		DataBase_CreateTable_m2372400155(NULL /*static, unused*/, /*hidden argument*/NULL);
@@ -23345,13 +23489,14 @@ extern "C" IL2CPP_METHOD_ATTR void DataBase_CreateTable_m2372400155 (RuntimeObje
 		//     "name char(100) NOT NULL," +
 		//     "logo char(100) NOT NULL," +
 		//     "effect char(100) NOT NULL," +
+		//     "shirt char(100) NOT NULL," +
 		//     "bonus int NOT NULL," +
 		//     "level int," +
 		//     "level_up int" +
 		//     ");", connection);
 		SqliteConnection_t3870565407 * L_1 = V_0;
 		SqliteCommand_t3916884476 * L_2 = (SqliteCommand_t3916884476 *)il2cpp_codegen_object_new(SqliteCommand_t3916884476_il2cpp_TypeInfo_var);
-		SqliteCommand__ctor_m3721464379(L_2, _stringLiteral4074661255, L_1, /*hidden argument*/NULL);
+		SqliteCommand__ctor_m3721464379(L_2, _stringLiteral1419608450, L_1, /*hidden argument*/NULL);
 		V_1 = L_2;
 		// SqliteCommand command2 = new SqliteCommand("" +
 		//     "CREATE TABLE IF NOT EXISTS card_treasure (" +
@@ -23360,11 +23505,12 @@ extern "C" IL2CPP_METHOD_ATTR void DataBase_CreateTable_m2372400155 (RuntimeObje
 		//     "name char(100) NOT NULL," +
 		//     "logo char(100) NOT NULL," +
 		//     "effect char(100) NOT NULL," +
+		//     "shirt char(100) NOT NULL," +
 		//     "bonus int NOT NULL" +
 		//     ")", connection);
 		SqliteConnection_t3870565407 * L_3 = V_0;
 		SqliteCommand_t3916884476 * L_4 = (SqliteCommand_t3916884476 *)il2cpp_codegen_object_new(SqliteCommand_t3916884476_il2cpp_TypeInfo_var);
-		SqliteCommand__ctor_m3721464379(L_4, _stringLiteral2428882066, L_3, /*hidden argument*/NULL);
+		SqliteCommand__ctor_m3721464379(L_4, _stringLiteral1685460202, L_3, /*hidden argument*/NULL);
 		// connection.Open();
 		SqliteConnection_t3870565407 * L_5 = V_0;
 		NullCheck(L_5);
@@ -23395,6 +23541,7 @@ extern "C" IL2CPP_METHOD_ATTR void DataBase_SelectDataDoor_m2264027440 (RuntimeO
 	}
 	{
 		// addCardDoor("monster", "Amnesiya", "", 2, 2, 1);
+		IL2CPP_RUNTIME_CLASS_INIT(DataBase_t2832599879_il2cpp_TypeInfo_var);
 		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral3220192365, _stringLiteral757602046, 2, 2, 1, /*hidden argument*/NULL);
 		// addCardDoor("monster", "Analog", "", 5, 10, 1);
 		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral780708881, _stringLiteral757602046, 5, ((int32_t)10), 1, /*hidden argument*/NULL);
@@ -23425,6 +23572,7 @@ extern "C" IL2CPP_METHOD_ATTR void DataBase_SelectDataTresure_m951135376 (Runtim
 	}
 	{
 		// addCardTresure("bonus", "Carpet", "", 1);
+		IL2CPP_RUNTIME_CLASS_INIT(DataBase_t2832599879_il2cpp_TypeInfo_var);
 		DataBase_addCardTresure_m476306503(NULL /*static, unused*/, _stringLiteral365775221, _stringLiteral787928648, _stringLiteral757602046, 1, /*hidden argument*/NULL);
 		// addCardTresure("bonus", "Cup", "", 3);
 		DataBase_addCardTresure_m476306503(NULL /*static, unused*/, _stringLiteral365775221, _stringLiteral228667575, _stringLiteral757602046, 3, /*hidden argument*/NULL);
@@ -23458,11 +23606,11 @@ extern "C" IL2CPP_METHOD_ATTR void DataBase_addCardDoor_m4104125901 (RuntimeObje
 		SqliteConnection__ctor_m1023779099(L_0, _stringLiteral877140559, /*hidden argument*/NULL);
 		V_0 = L_0;
 		// SqliteCommand command = new SqliteCommand(string.Format("" +
-		//     "INSERT INTO card_door (type, name, logo, effect, bonus, level, level_up) " +
-		//     "VALUES ('{0}', '{1}', '{2}', '{3}', {4}, {5}, {6})",
-		//     type, name, "Sprites/Card_door/" + name, effect, bonus, level, level_up),
+		//     "INSERT INTO card_door (type, name, logo, effect, shirt, bonus, level, level_up) " +
+		//     "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', {5}, {6}, {7})",
+		//     type, name, sprites_door + name, effect, sprites_door + "Door_Shirt", bonus, level, level_up),
 		//     connection);
-		ObjectU5BU5D_t2843939325* L_1 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)7);
+		ObjectU5BU5D_t2843939325* L_1 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)8);
 		ObjectU5BU5D_t2843939325* L_2 = L_1;
 		String_t* L_3 = ___type0;
 		NullCheck(L_2);
@@ -23474,52 +23622,60 @@ extern "C" IL2CPP_METHOD_ATTR void DataBase_addCardDoor_m4104125901 (RuntimeObje
 		ArrayElementTypeCheck (L_4, L_5);
 		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_5);
 		ObjectU5BU5D_t2843939325* L_6 = L_4;
-		String_t* L_7 = ___name1;
-		String_t* L_8 = String_Concat_m3937257545(NULL /*static, unused*/, _stringLiteral1712397492, L_7, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(DataBase_t2832599879_il2cpp_TypeInfo_var);
+		String_t* L_7 = ((DataBase_t2832599879_StaticFields*)il2cpp_codegen_static_fields_for(DataBase_t2832599879_il2cpp_TypeInfo_var))->get_sprites_door_1();
+		String_t* L_8 = ___name1;
+		String_t* L_9 = String_Concat_m3937257545(NULL /*static, unused*/, L_7, L_8, /*hidden argument*/NULL);
 		NullCheck(L_6);
-		ArrayElementTypeCheck (L_6, L_8);
-		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject *)L_8);
-		ObjectU5BU5D_t2843939325* L_9 = L_6;
-		String_t* L_10 = ___effect2;
-		NullCheck(L_9);
-		ArrayElementTypeCheck (L_9, L_10);
-		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject *)L_10);
-		ObjectU5BU5D_t2843939325* L_11 = L_9;
-		int32_t L_12 = ___bonus3;
-		int32_t L_13 = L_12;
-		RuntimeObject * L_14 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_13);
-		NullCheck(L_11);
-		ArrayElementTypeCheck (L_11, L_14);
-		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(4), (RuntimeObject *)L_14);
-		ObjectU5BU5D_t2843939325* L_15 = L_11;
-		int32_t L_16 = ___level4;
+		ArrayElementTypeCheck (L_6, L_9);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject *)L_9);
+		ObjectU5BU5D_t2843939325* L_10 = L_6;
+		String_t* L_11 = ___effect2;
+		NullCheck(L_10);
+		ArrayElementTypeCheck (L_10, L_11);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject *)L_11);
+		ObjectU5BU5D_t2843939325* L_12 = L_10;
+		String_t* L_13 = ((DataBase_t2832599879_StaticFields*)il2cpp_codegen_static_fields_for(DataBase_t2832599879_il2cpp_TypeInfo_var))->get_sprites_door_1();
+		String_t* L_14 = String_Concat_m3937257545(NULL /*static, unused*/, L_13, _stringLiteral900836271, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		ArrayElementTypeCheck (L_12, L_14);
+		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(4), (RuntimeObject *)L_14);
+		ObjectU5BU5D_t2843939325* L_15 = L_12;
+		int32_t L_16 = ___bonus3;
 		int32_t L_17 = L_16;
 		RuntimeObject * L_18 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_17);
 		NullCheck(L_15);
 		ArrayElementTypeCheck (L_15, L_18);
 		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(5), (RuntimeObject *)L_18);
 		ObjectU5BU5D_t2843939325* L_19 = L_15;
-		int32_t L_20 = ___level_up5;
+		int32_t L_20 = ___level4;
 		int32_t L_21 = L_20;
 		RuntimeObject * L_22 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_21);
 		NullCheck(L_19);
 		ArrayElementTypeCheck (L_19, L_22);
 		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(6), (RuntimeObject *)L_22);
-		String_t* L_23 = String_Format_m630303134(NULL /*static, unused*/, _stringLiteral625912212, L_19, /*hidden argument*/NULL);
-		SqliteConnection_t3870565407 * L_24 = V_0;
-		SqliteCommand_t3916884476 * L_25 = (SqliteCommand_t3916884476 *)il2cpp_codegen_object_new(SqliteCommand_t3916884476_il2cpp_TypeInfo_var);
-		SqliteCommand__ctor_m3721464379(L_25, L_23, L_24, /*hidden argument*/NULL);
+		ObjectU5BU5D_t2843939325* L_23 = L_19;
+		int32_t L_24 = ___level_up5;
+		int32_t L_25 = L_24;
+		RuntimeObject * L_26 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_25);
+		NullCheck(L_23);
+		ArrayElementTypeCheck (L_23, L_26);
+		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(7), (RuntimeObject *)L_26);
+		String_t* L_27 = String_Format_m630303134(NULL /*static, unused*/, _stringLiteral750005253, L_23, /*hidden argument*/NULL);
+		SqliteConnection_t3870565407 * L_28 = V_0;
+		SqliteCommand_t3916884476 * L_29 = (SqliteCommand_t3916884476 *)il2cpp_codegen_object_new(SqliteCommand_t3916884476_il2cpp_TypeInfo_var);
+		SqliteCommand__ctor_m3721464379(L_29, L_27, L_28, /*hidden argument*/NULL);
 		// connection.Open();
-		SqliteConnection_t3870565407 * L_26 = V_0;
-		NullCheck(L_26);
-		VirtActionInvoker0::Invoke(23 /* System.Void System.Data.Common.DbConnection::Open() */, L_26);
+		SqliteConnection_t3870565407 * L_30 = V_0;
+		NullCheck(L_30);
+		VirtActionInvoker0::Invoke(23 /* System.Void System.Data.Common.DbConnection::Open() */, L_30);
 		// command.ExecuteNonQuery();
-		NullCheck(L_25);
-		VirtFuncInvoker0< int32_t >::Invoke(29 /* System.Int32 System.Data.Common.DbCommand::ExecuteNonQuery() */, L_25);
+		NullCheck(L_29);
+		VirtFuncInvoker0< int32_t >::Invoke(29 /* System.Int32 System.Data.Common.DbCommand::ExecuteNonQuery() */, L_29);
 		// connection.Close();
-		SqliteConnection_t3870565407 * L_27 = V_0;
-		NullCheck(L_27);
-		VirtActionInvoker0::Invoke(17 /* System.Void System.Data.Common.DbConnection::Close() */, L_27);
+		SqliteConnection_t3870565407 * L_31 = V_0;
+		NullCheck(L_31);
+		VirtActionInvoker0::Invoke(17 /* System.Void System.Data.Common.DbConnection::Close() */, L_31);
 		// }
 		return;
 	}
@@ -23540,11 +23696,11 @@ extern "C" IL2CPP_METHOD_ATTR void DataBase_addCardTresure_m476306503 (RuntimeOb
 		SqliteConnection__ctor_m1023779099(L_0, _stringLiteral877140559, /*hidden argument*/NULL);
 		V_0 = L_0;
 		// SqliteCommand command = new SqliteCommand(string.Format("" +
-		//     "INSERT INTO card_treasure (type, name, logo, effect, bonus) " +
-		//     "VALUES ('{0}', '{1}', '{2}', '{3}', {4})",
-		//     type, name, "Sprites/Card_treasure/" + name, effect, bonus),
+		//     "INSERT INTO card_treasure (type, name, logo, effect, shirt, bonus) " +
+		//     "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', {5})",
+		//     type, name, sprites_treasure + name, effect, sprites_treasure + "Treasure_Shirt", bonus),
 		//     connection);
-		ObjectU5BU5D_t2843939325* L_1 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)5);
+		ObjectU5BU5D_t2843939325* L_1 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)6);
 		ObjectU5BU5D_t2843939325* L_2 = L_1;
 		String_t* L_3 = ___type0;
 		NullCheck(L_2);
@@ -23556,38 +23712,46 @@ extern "C" IL2CPP_METHOD_ATTR void DataBase_addCardTresure_m476306503 (RuntimeOb
 		ArrayElementTypeCheck (L_4, L_5);
 		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_5);
 		ObjectU5BU5D_t2843939325* L_6 = L_4;
-		String_t* L_7 = ___name1;
-		String_t* L_8 = String_Concat_m3937257545(NULL /*static, unused*/, _stringLiteral3791183377, L_7, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(DataBase_t2832599879_il2cpp_TypeInfo_var);
+		String_t* L_7 = ((DataBase_t2832599879_StaticFields*)il2cpp_codegen_static_fields_for(DataBase_t2832599879_il2cpp_TypeInfo_var))->get_sprites_treasure_2();
+		String_t* L_8 = ___name1;
+		String_t* L_9 = String_Concat_m3937257545(NULL /*static, unused*/, L_7, L_8, /*hidden argument*/NULL);
 		NullCheck(L_6);
-		ArrayElementTypeCheck (L_6, L_8);
-		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject *)L_8);
-		ObjectU5BU5D_t2843939325* L_9 = L_6;
-		String_t* L_10 = ___effect2;
-		NullCheck(L_9);
-		ArrayElementTypeCheck (L_9, L_10);
-		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject *)L_10);
-		ObjectU5BU5D_t2843939325* L_11 = L_9;
-		int32_t L_12 = ___bonus3;
-		int32_t L_13 = L_12;
-		RuntimeObject * L_14 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_13);
-		NullCheck(L_11);
-		ArrayElementTypeCheck (L_11, L_14);
-		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(4), (RuntimeObject *)L_14);
-		String_t* L_15 = String_Format_m630303134(NULL /*static, unused*/, _stringLiteral2368291812, L_11, /*hidden argument*/NULL);
-		SqliteConnection_t3870565407 * L_16 = V_0;
-		SqliteCommand_t3916884476 * L_17 = (SqliteCommand_t3916884476 *)il2cpp_codegen_object_new(SqliteCommand_t3916884476_il2cpp_TypeInfo_var);
-		SqliteCommand__ctor_m3721464379(L_17, L_15, L_16, /*hidden argument*/NULL);
+		ArrayElementTypeCheck (L_6, L_9);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject *)L_9);
+		ObjectU5BU5D_t2843939325* L_10 = L_6;
+		String_t* L_11 = ___effect2;
+		NullCheck(L_10);
+		ArrayElementTypeCheck (L_10, L_11);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject *)L_11);
+		ObjectU5BU5D_t2843939325* L_12 = L_10;
+		String_t* L_13 = ((DataBase_t2832599879_StaticFields*)il2cpp_codegen_static_fields_for(DataBase_t2832599879_il2cpp_TypeInfo_var))->get_sprites_treasure_2();
+		String_t* L_14 = String_Concat_m3937257545(NULL /*static, unused*/, L_13, _stringLiteral3683732790, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		ArrayElementTypeCheck (L_12, L_14);
+		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(4), (RuntimeObject *)L_14);
+		ObjectU5BU5D_t2843939325* L_15 = L_12;
+		int32_t L_16 = ___bonus3;
+		int32_t L_17 = L_16;
+		RuntimeObject * L_18 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_17);
+		NullCheck(L_15);
+		ArrayElementTypeCheck (L_15, L_18);
+		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(5), (RuntimeObject *)L_18);
+		String_t* L_19 = String_Format_m630303134(NULL /*static, unused*/, _stringLiteral3142144500, L_15, /*hidden argument*/NULL);
+		SqliteConnection_t3870565407 * L_20 = V_0;
+		SqliteCommand_t3916884476 * L_21 = (SqliteCommand_t3916884476 *)il2cpp_codegen_object_new(SqliteCommand_t3916884476_il2cpp_TypeInfo_var);
+		SqliteCommand__ctor_m3721464379(L_21, L_19, L_20, /*hidden argument*/NULL);
 		// connection.Open();
-		SqliteConnection_t3870565407 * L_18 = V_0;
-		NullCheck(L_18);
-		VirtActionInvoker0::Invoke(23 /* System.Void System.Data.Common.DbConnection::Open() */, L_18);
+		SqliteConnection_t3870565407 * L_22 = V_0;
+		NullCheck(L_22);
+		VirtActionInvoker0::Invoke(23 /* System.Void System.Data.Common.DbConnection::Open() */, L_22);
 		// command.ExecuteNonQuery();
-		NullCheck(L_17);
-		VirtFuncInvoker0< int32_t >::Invoke(29 /* System.Int32 System.Data.Common.DbCommand::ExecuteNonQuery() */, L_17);
+		NullCheck(L_21);
+		VirtFuncInvoker0< int32_t >::Invoke(29 /* System.Int32 System.Data.Common.DbCommand::ExecuteNonQuery() */, L_21);
 		// connection.Close();
-		SqliteConnection_t3870565407 * L_19 = V_0;
-		NullCheck(L_19);
-		VirtActionInvoker0::Invoke(17 /* System.Void System.Data.Common.DbConnection::Close() */, L_19);
+		SqliteConnection_t3870565407 * L_23 = V_0;
+		NullCheck(L_23);
+		VirtActionInvoker0::Invoke(17 /* System.Void System.Data.Common.DbConnection::Close() */, L_23);
 		// }
 		return;
 	}
@@ -23644,7 +23808,7 @@ IL_0038:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_0091;
+			goto IL_00a1;
 		}
 
 IL_003a:
@@ -23654,7 +23818,7 @@ IL_003a:
 			NullCheck(L_9);
 			RuntimeObject * L_10 = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(1 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_9);
 			V_3 = ((DbDataRecord_t1441540683 *)CastclassClass((RuntimeObject*)L_10, DbDataRecord_t1441540683_il2cpp_TypeInfo_var));
-			// list.Add(new Card_door_monster(record["name"].ToString(), record["logo"].ToString(), Convert.ToInt32(record["level"]), Convert.ToInt32(record["level_up"])));
+			// list.Add(new Card_door_monster(record["name"].ToString(), record["logo"].ToString(), Convert.ToInt32(record["level"]), Convert.ToInt32(record["level_up"]), record["shirt"].ToString()));
 			List_1_t565324203 * L_11 = V_0;
 			DbDataRecord_t1441540683 * L_12 = V_3;
 			NullCheck(L_12);
@@ -23675,11 +23839,171 @@ IL_003a:
 			NullCheck(L_21);
 			RuntimeObject * L_22 = VirtFuncInvoker1< RuntimeObject *, String_t* >::Invoke(14 /* System.Object System.Data.Common.DbDataRecord::get_Item(System.String) */, L_21, _stringLiteral2711861735);
 			int32_t L_23 = Convert_ToInt32_m2608095889(NULL /*static, unused*/, L_22, /*hidden argument*/NULL);
-			Card_door_monster_t3388216757  L_24;
-			memset(&L_24, 0, sizeof(L_24));
-			Card_door_monster__ctor_m1993282106((&L_24), L_14, L_17, L_20, L_23, /*hidden argument*/NULL);
+			DbDataRecord_t1441540683 * L_24 = V_3;
+			NullCheck(L_24);
+			RuntimeObject * L_25 = VirtFuncInvoker1< RuntimeObject *, String_t* >::Invoke(14 /* System.Object System.Data.Common.DbDataRecord::get_Item(System.String) */, L_24, _stringLiteral2342388868);
+			NullCheck(L_25);
+			String_t* L_26 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_25);
+			Card_door_monster_t3388216757  L_27;
+			memset(&L_27, 0, sizeof(L_27));
+			Card_door_monster__ctor_m815241072((&L_27), L_14, L_17, L_20, L_23, L_26, /*hidden argument*/NULL);
 			NullCheck(L_11);
-			List_1_Add_m1158426158(L_11, L_24, /*hidden argument*/List_1_Add_m1158426158_RuntimeMethod_var);
+			List_1_Add_m1158426158(L_11, L_27, /*hidden argument*/List_1_Add_m1158426158_RuntimeMethod_var);
+		}
+
+IL_00a1:
+		{
+			// foreach (DbDataRecord record in reader)
+			RuntimeObject* L_28 = V_2;
+			NullCheck(L_28);
+			bool L_29 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_28);
+			if (L_29)
+			{
+				goto IL_003a;
+			}
+		}
+
+IL_00a9:
+		{
+			IL2CPP_LEAVE(0xBF, FINALLY_00ab);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_00ab;
+	}
+
+FINALLY_00ab:
+	{ // begin finally (depth: 1)
+		{
+			RuntimeObject* L_30 = V_2;
+			V_4 = ((RuntimeObject*)IsInst((RuntimeObject*)L_30, IDisposable_t3640265483_il2cpp_TypeInfo_var));
+			RuntimeObject* L_31 = V_4;
+			if (!L_31)
+			{
+				goto IL_00be;
+			}
+		}
+
+IL_00b7:
+		{
+			RuntimeObject* L_32 = V_4;
+			NullCheck(L_32);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t3640265483_il2cpp_TypeInfo_var, L_32);
+		}
+
+IL_00be:
+		{
+			IL2CPP_END_FINALLY(171)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(171)
+	{
+		IL2CPP_JUMP_TBL(0xBF, IL_00bf)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_00bf:
+	{
+		// connection.Close();
+		SqliteConnection_t3870565407 * L_33 = V_1;
+		NullCheck(L_33);
+		VirtActionInvoker0::Invoke(17 /* System.Void System.Data.Common.DbConnection::Close() */, L_33);
+		// return list;
+		List_1_t565324203 * L_34 = V_0;
+		return L_34;
+	}
+}
+// System.Collections.Generic.List`1<Card_treasure_bonus> DataBase::getTreasure(System.String)
+extern "C" IL2CPP_METHOD_ATTR List_1_t217518465 * DataBase_getTreasure_m1868470624 (DataBase_t2832599879 * __this, String_t* ___type0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (DataBase_getTreasure_m1868470624_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_t217518465 * V_0 = NULL;
+	SqliteConnection_t3870565407 * V_1 = NULL;
+	RuntimeObject* V_2 = NULL;
+	DbDataRecord_t1441540683 * V_3 = NULL;
+	RuntimeObject* V_4 = NULL;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		// List<Card_treasure_bonus> list = new List<Card_treasure_bonus>();
+		List_1_t217518465 * L_0 = (List_1_t217518465 *)il2cpp_codegen_object_new(List_1_t217518465_il2cpp_TypeInfo_var);
+		List_1__ctor_m4011203208(L_0, /*hidden argument*/List_1__ctor_m4011203208_RuntimeMethod_var);
+		V_0 = L_0;
+		// SqliteConnection connection = new SqliteConnection("Data Source=" + databaseName);
+		SqliteConnection_t3870565407 * L_1 = (SqliteConnection_t3870565407 *)il2cpp_codegen_object_new(SqliteConnection_t3870565407_il2cpp_TypeInfo_var);
+		SqliteConnection__ctor_m1023779099(L_1, _stringLiteral877140559, /*hidden argument*/NULL);
+		V_1 = L_1;
+		// SqliteCommand command = new SqliteCommand("SELECT * FROM card_treasure WHERE type='" + type + "'", connection);
+		String_t* L_2 = ___type0;
+		String_t* L_3 = String_Concat_m3755062657(NULL /*static, unused*/, _stringLiteral799830170, L_2, _stringLiteral3452614521, /*hidden argument*/NULL);
+		SqliteConnection_t3870565407 * L_4 = V_1;
+		SqliteCommand_t3916884476 * L_5 = (SqliteCommand_t3916884476 *)il2cpp_codegen_object_new(SqliteCommand_t3916884476_il2cpp_TypeInfo_var);
+		SqliteCommand__ctor_m3721464379(L_5, L_3, L_4, /*hidden argument*/NULL);
+		// connection.Open();
+		SqliteConnection_t3870565407 * L_6 = V_1;
+		NullCheck(L_6);
+		VirtActionInvoker0::Invoke(23 /* System.Void System.Data.Common.DbConnection::Open() */, L_6);
+		// SqliteDataReader reader = command.ExecuteReader();
+		NullCheck(L_5);
+		SqliteDataReader_t2933346592 * L_7 = SqliteCommand_ExecuteReader_m2650318165(L_5, /*hidden argument*/NULL);
+		// foreach (DbDataRecord record in reader)
+		NullCheck(L_7);
+		RuntimeObject* L_8 = VirtFuncInvoker0< RuntimeObject* >::Invoke(26 /* System.Collections.IEnumerator System.Data.Common.DbDataReader::GetEnumerator() */, L_7);
+		V_2 = L_8;
+	}
+
+IL_0038:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_0091;
+		}
+
+IL_003a:
+		{
+			// foreach (DbDataRecord record in reader)
+			RuntimeObject* L_9 = V_2;
+			NullCheck(L_9);
+			RuntimeObject * L_10 = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(1 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_9);
+			V_3 = ((DbDataRecord_t1441540683 *)CastclassClass((RuntimeObject*)L_10, DbDataRecord_t1441540683_il2cpp_TypeInfo_var));
+			// list.Add(new Card_treasure_bonus(record["name"].ToString(), record["logo"].ToString(), Convert.ToInt32(record["bonus"]), record["shirt"].ToString()));
+			List_1_t217518465 * L_11 = V_0;
+			DbDataRecord_t1441540683 * L_12 = V_3;
+			NullCheck(L_12);
+			RuntimeObject * L_13 = VirtFuncInvoker1< RuntimeObject *, String_t* >::Invoke(14 /* System.Object System.Data.Common.DbDataRecord::get_Item(System.String) */, L_12, _stringLiteral62725243);
+			NullCheck(L_13);
+			String_t* L_14 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_13);
+			DbDataRecord_t1441540683 * L_15 = V_3;
+			NullCheck(L_15);
+			RuntimeObject * L_16 = VirtFuncInvoker1< RuntimeObject *, String_t* >::Invoke(14 /* System.Object System.Data.Common.DbDataRecord::get_Item(System.String) */, L_15, _stringLiteral2728897163);
+			NullCheck(L_16);
+			String_t* L_17 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_16);
+			DbDataRecord_t1441540683 * L_18 = V_3;
+			NullCheck(L_18);
+			RuntimeObject * L_19 = VirtFuncInvoker1< RuntimeObject *, String_t* >::Invoke(14 /* System.Object System.Data.Common.DbDataRecord::get_Item(System.String) */, L_18, _stringLiteral365775221);
+			IL2CPP_RUNTIME_CLASS_INIT(Convert_t2465617642_il2cpp_TypeInfo_var);
+			int32_t L_20 = Convert_ToInt32_m2608095889(NULL /*static, unused*/, L_19, /*hidden argument*/NULL);
+			DbDataRecord_t1441540683 * L_21 = V_3;
+			NullCheck(L_21);
+			RuntimeObject * L_22 = VirtFuncInvoker1< RuntimeObject *, String_t* >::Invoke(14 /* System.Object System.Data.Common.DbDataRecord::get_Item(System.String) */, L_21, _stringLiteral2342388868);
+			NullCheck(L_22);
+			String_t* L_23 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_22);
+			Card_treasure_bonus_t3040411019  L_24;
+			memset(&L_24, 0, sizeof(L_24));
+			Card_treasure_bonus__ctor_m1977542925((&L_24), L_14, L_17, L_20, L_23, /*hidden argument*/NULL);
+			NullCheck(L_11);
+			List_1_Add_m3852298320(L_11, L_24, /*hidden argument*/List_1_Add_m3852298320_RuntimeMethod_var);
 		}
 
 IL_0091:
@@ -23742,158 +24066,8 @@ IL_00af:
 		NullCheck(L_30);
 		VirtActionInvoker0::Invoke(17 /* System.Void System.Data.Common.DbConnection::Close() */, L_30);
 		// return list;
-		List_1_t565324203 * L_31 = V_0;
+		List_1_t217518465 * L_31 = V_0;
 		return L_31;
-	}
-}
-// System.Collections.Generic.List`1<Card_treasure_bonus> DataBase::getTreasure(System.String)
-extern "C" IL2CPP_METHOD_ATTR List_1_t217518465 * DataBase_getTreasure_m1868470624 (DataBase_t2832599879 * __this, String_t* ___type0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (DataBase_getTreasure_m1868470624_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	List_1_t217518465 * V_0 = NULL;
-	SqliteConnection_t3870565407 * V_1 = NULL;
-	RuntimeObject* V_2 = NULL;
-	DbDataRecord_t1441540683 * V_3 = NULL;
-	RuntimeObject* V_4 = NULL;
-	Exception_t * __last_unhandled_exception = 0;
-	NO_UNUSED_WARNING (__last_unhandled_exception);
-	Exception_t * __exception_local = 0;
-	NO_UNUSED_WARNING (__exception_local);
-	int32_t __leave_target = -1;
-	NO_UNUSED_WARNING (__leave_target);
-	{
-		// List<Card_treasure_bonus> list = new List<Card_treasure_bonus>();
-		List_1_t217518465 * L_0 = (List_1_t217518465 *)il2cpp_codegen_object_new(List_1_t217518465_il2cpp_TypeInfo_var);
-		List_1__ctor_m4011203208(L_0, /*hidden argument*/List_1__ctor_m4011203208_RuntimeMethod_var);
-		V_0 = L_0;
-		// SqliteConnection connection = new SqliteConnection("Data Source=" + databaseName);
-		SqliteConnection_t3870565407 * L_1 = (SqliteConnection_t3870565407 *)il2cpp_codegen_object_new(SqliteConnection_t3870565407_il2cpp_TypeInfo_var);
-		SqliteConnection__ctor_m1023779099(L_1, _stringLiteral877140559, /*hidden argument*/NULL);
-		V_1 = L_1;
-		// SqliteCommand command = new SqliteCommand("SELECT * FROM card_treasure WHERE type='" + type + "'", connection);
-		String_t* L_2 = ___type0;
-		String_t* L_3 = String_Concat_m3755062657(NULL /*static, unused*/, _stringLiteral799830170, L_2, _stringLiteral3452614521, /*hidden argument*/NULL);
-		SqliteConnection_t3870565407 * L_4 = V_1;
-		SqliteCommand_t3916884476 * L_5 = (SqliteCommand_t3916884476 *)il2cpp_codegen_object_new(SqliteCommand_t3916884476_il2cpp_TypeInfo_var);
-		SqliteCommand__ctor_m3721464379(L_5, L_3, L_4, /*hidden argument*/NULL);
-		// connection.Open();
-		SqliteConnection_t3870565407 * L_6 = V_1;
-		NullCheck(L_6);
-		VirtActionInvoker0::Invoke(23 /* System.Void System.Data.Common.DbConnection::Open() */, L_6);
-		// SqliteDataReader reader = command.ExecuteReader();
-		NullCheck(L_5);
-		SqliteDataReader_t2933346592 * L_7 = SqliteCommand_ExecuteReader_m2650318165(L_5, /*hidden argument*/NULL);
-		// foreach (DbDataRecord record in reader)
-		NullCheck(L_7);
-		RuntimeObject* L_8 = VirtFuncInvoker0< RuntimeObject* >::Invoke(26 /* System.Collections.IEnumerator System.Data.Common.DbDataReader::GetEnumerator() */, L_7);
-		V_2 = L_8;
-	}
-
-IL_0038:
-	try
-	{ // begin try (depth: 1)
-		{
-			goto IL_0081;
-		}
-
-IL_003a:
-		{
-			// foreach (DbDataRecord record in reader)
-			RuntimeObject* L_9 = V_2;
-			NullCheck(L_9);
-			RuntimeObject * L_10 = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(1 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_9);
-			V_3 = ((DbDataRecord_t1441540683 *)CastclassClass((RuntimeObject*)L_10, DbDataRecord_t1441540683_il2cpp_TypeInfo_var));
-			// list.Add(new Card_treasure_bonus(record["name"].ToString(), record["logo"].ToString(), Convert.ToInt32(record["bonus"])));
-			List_1_t217518465 * L_11 = V_0;
-			DbDataRecord_t1441540683 * L_12 = V_3;
-			NullCheck(L_12);
-			RuntimeObject * L_13 = VirtFuncInvoker1< RuntimeObject *, String_t* >::Invoke(14 /* System.Object System.Data.Common.DbDataRecord::get_Item(System.String) */, L_12, _stringLiteral62725243);
-			NullCheck(L_13);
-			String_t* L_14 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_13);
-			DbDataRecord_t1441540683 * L_15 = V_3;
-			NullCheck(L_15);
-			RuntimeObject * L_16 = VirtFuncInvoker1< RuntimeObject *, String_t* >::Invoke(14 /* System.Object System.Data.Common.DbDataRecord::get_Item(System.String) */, L_15, _stringLiteral2728897163);
-			NullCheck(L_16);
-			String_t* L_17 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_16);
-			DbDataRecord_t1441540683 * L_18 = V_3;
-			NullCheck(L_18);
-			RuntimeObject * L_19 = VirtFuncInvoker1< RuntimeObject *, String_t* >::Invoke(14 /* System.Object System.Data.Common.DbDataRecord::get_Item(System.String) */, L_18, _stringLiteral365775221);
-			IL2CPP_RUNTIME_CLASS_INIT(Convert_t2465617642_il2cpp_TypeInfo_var);
-			int32_t L_20 = Convert_ToInt32_m2608095889(NULL /*static, unused*/, L_19, /*hidden argument*/NULL);
-			Card_treasure_bonus_t3040411019  L_21;
-			memset(&L_21, 0, sizeof(L_21));
-			Card_treasure_bonus__ctor_m826272411((&L_21), L_14, L_17, L_20, /*hidden argument*/NULL);
-			NullCheck(L_11);
-			List_1_Add_m3852298320(L_11, L_21, /*hidden argument*/List_1_Add_m3852298320_RuntimeMethod_var);
-		}
-
-IL_0081:
-		{
-			// foreach (DbDataRecord record in reader)
-			RuntimeObject* L_22 = V_2;
-			NullCheck(L_22);
-			bool L_23 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_22);
-			if (L_23)
-			{
-				goto IL_003a;
-			}
-		}
-
-IL_0089:
-		{
-			IL2CPP_LEAVE(0x9F, FINALLY_008b);
-		}
-	} // end try (depth: 1)
-	catch(Il2CppExceptionWrapper& e)
-	{
-		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_008b;
-	}
-
-FINALLY_008b:
-	{ // begin finally (depth: 1)
-		{
-			RuntimeObject* L_24 = V_2;
-			V_4 = ((RuntimeObject*)IsInst((RuntimeObject*)L_24, IDisposable_t3640265483_il2cpp_TypeInfo_var));
-			RuntimeObject* L_25 = V_4;
-			if (!L_25)
-			{
-				goto IL_009e;
-			}
-		}
-
-IL_0097:
-		{
-			RuntimeObject* L_26 = V_4;
-			NullCheck(L_26);
-			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t3640265483_il2cpp_TypeInfo_var, L_26);
-		}
-
-IL_009e:
-		{
-			IL2CPP_END_FINALLY(139)
-		}
-	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(139)
-	{
-		IL2CPP_JUMP_TBL(0x9F, IL_009f)
-		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
-	}
-
-IL_009f:
-	{
-		// connection.Close();
-		SqliteConnection_t3870565407 * L_27 = V_1;
-		NullCheck(L_27);
-		VirtActionInvoker0::Invoke(17 /* System.Void System.Data.Common.DbConnection::Close() */, L_27);
-		// return list;
-		List_1_t217518465 * L_28 = V_0;
-		return L_28;
 	}
 }
 // System.Void DataBase::.ctor()
@@ -23901,6 +24075,23 @@ extern "C" IL2CPP_METHOD_ATTR void DataBase__ctor_m3861218403 (DataBase_t2832599
 {
 	{
 		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void DataBase::.cctor()
+extern "C" IL2CPP_METHOD_ATTR void DataBase__cctor_m4248120672 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (DataBase__cctor_m4248120672_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// static string sprites_door = "Sprites/Card_door/";
+		((DataBase_t2832599879_StaticFields*)il2cpp_codegen_static_fields_for(DataBase_t2832599879_il2cpp_TypeInfo_var))->set_sprites_door_1(_stringLiteral1712397492);
+		// static string sprites_treasure = "Sprites/Card_treasure/";
+		((DataBase_t2832599879_StaticFields*)il2cpp_codegen_static_fields_for(DataBase_t2832599879_il2cpp_TypeInfo_var))->set_sprites_treasure_2(_stringLiteral3791183377);
 		return;
 	}
 }
@@ -24910,7 +25101,7 @@ IL_0022:
 		bool L_10 = GameMenegerScr_get_IsPlayerTurn_m64769948(L_9, /*hidden argument*/NULL);
 		if (!L_10)
 		{
-			goto IL_00ea;
+			goto IL_00d6;
 		}
 	}
 	{
@@ -24961,7 +25152,7 @@ IL_008a:
 	}
 	{
 		// }
-		goto IL_00fe;
+		goto IL_00eb;
 	}
 
 IL_00a0:
@@ -24991,7 +25182,7 @@ IL_00cf:
 
 IL_00d6:
 	{
-		// while (TurnTime-- > 0)
+		// while (TurnTime-- > 27)
 		GameMenegerScr_t193932114 * L_28 = V_1;
 		GameMenegerScr_t193932114 * L_29 = V_1;
 		NullCheck(L_29);
@@ -25001,31 +25192,13 @@ IL_00d6:
 		NullCheck(L_28);
 		L_28->set_TurnTime_10(((int32_t)il2cpp_codegen_subtract((int32_t)L_31, (int32_t)1)));
 		int32_t L_32 = V_2;
-		if ((((int32_t)L_32) > ((int32_t)0)))
+		if ((((int32_t)L_32) > ((int32_t)((int32_t)27))))
 		{
 			goto IL_00a0;
 		}
 	}
 
-IL_00ea:
-	{
-		// while(TurnTime-->0)
-		GameMenegerScr_t193932114 * L_33 = V_1;
-		GameMenegerScr_t193932114 * L_34 = V_1;
-		NullCheck(L_34);
-		int32_t L_35 = L_34->get_TurnTime_10();
-		V_2 = L_35;
-		int32_t L_36 = V_2;
-		NullCheck(L_33);
-		L_33->set_TurnTime_10(((int32_t)il2cpp_codegen_subtract((int32_t)L_36, (int32_t)1)));
-		int32_t L_37 = V_2;
-		if ((((int32_t)L_37) > ((int32_t)0)))
-		{
-			goto IL_00d6;
-		}
-	}
-
-IL_00fe:
+IL_00eb:
 	{
 		// }
 		return (bool)0;

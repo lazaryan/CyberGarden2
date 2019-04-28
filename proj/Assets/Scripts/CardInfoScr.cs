@@ -17,6 +17,7 @@ public class CardInfoScr : MonoBehaviour {
     {
         //ShowCardInfo(card);
        Logo.sprite = null;
+        Logo.transform.localScale = new Vector3 (0, 0);
          Shirt.sprite = card.Shirt;
       //  temp.SetActive(false);
 
@@ -24,15 +25,18 @@ public class CardInfoScr : MonoBehaviour {
 
     public void HideCardInfo_d(Card_door_monster card)
     {
+Logo.sprite = null;
+        Logo.transform.localScale = new Vector3(0, 0);
         
-        Logo.sprite = null;
         Shirt.sprite = card.Shirt;
     }
 
     public void ShowCardInfo_d(Card_door_monster card)
     {
         _SelfCard = card;
-        
+        Logo.transform.localScale = new Vector3(1, 1);
+        Shirt.transform.localScale = new Vector3(0, 0);
+
         Logo.sprite = card.Logo;
         
         Logo.preserveAspect = true;
@@ -43,6 +47,9 @@ public class CardInfoScr : MonoBehaviour {
     public void ShowCardInfo(Card_treasure_bonus card)
     {
         SelfCard = card;
+        Logo.transform.localScale = new Vector3(1, 1);
+        Shirt.transform.localScale = new Vector3(0, 0);
+
         Logo.sprite = card.Logo;
         Logo.preserveAspect = true;
         // Name.text = card.Name;
