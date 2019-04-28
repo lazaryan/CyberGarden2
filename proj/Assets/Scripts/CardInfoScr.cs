@@ -11,11 +11,19 @@ public class CardInfoScr : MonoBehaviour {
     // public Card_door_monster SelfCard;
     public Image Logo;
     public TextMeshProUGUI Name;
-       // public void ShowCardInfo(Card_door_monster card)
+    //GameObject temp = GameObject.Find("Hand_2");
+    // public void ShowCardInfo(Card_door_monster card)
+    public void HideCardInfo(Card_treasure_bonus card)
+    {
+        ShowCardInfo(card);
+        //SelfCard = card;
+        //Logo.sprite = null;
+      //  temp.SetActive(false);
+
+    }
    public void ShowCardInfo(Card_treasure_bonus card)
     {
         SelfCard = card;
-
         Logo.sprite = card.Logo;
         Logo.preserveAspect = true;
        // Name.text = card.Name;
@@ -32,6 +40,6 @@ public class CardInfoScr : MonoBehaviour {
     private void Start()
     {
         //ShowCardInfo(CardManager._Cards_door_monster[transform.GetSiblingIndex()]);
-        ShowCardInfo(CardManager._Cards_treasure_bonus[transform.GetSiblingIndex()]);
+        //ShowCardInfo(CardManager._Cards_treasure_bonus[transform.GetSiblingIndex()]);
     }
 }

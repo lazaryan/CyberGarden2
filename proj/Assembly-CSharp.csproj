@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\CardManagerScr.cs" />
     <Compile Include="Assets\Scripts\CardMovementScr.cs" />
     <Compile Include="Assets\Scripts\DropePleaceScr.cs" />
+    <Compile Include="Assets\Scripts\GameMenegerScr.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

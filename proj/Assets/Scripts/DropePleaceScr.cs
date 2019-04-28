@@ -16,6 +16,8 @@ public class DropePleaceScr : MonoBehaviour, IDropHandler, IPointerEnterHandler,
     public FieldType Type;
     public void OnDrop(PointerEventData eventData)
     {
+        if(Type != FieldType.SELF_FIELD)
+        { return; }
         CardMovementScr card = eventData.pointerDrag.GetComponent<CardMovementScr>();
         if (card)
         {
@@ -25,7 +27,7 @@ public class DropePleaceScr : MonoBehaviour, IDropHandler, IPointerEnterHandler,
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if(eventData.pointerDrag == null)
+        if(eventData.pointerDrag == null || Type == FieldType.ENEMY_FIELD || Type == FieldType.ENEMY_HAND)  
         {
             return;
         }
