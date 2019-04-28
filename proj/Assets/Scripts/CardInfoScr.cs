@@ -21,10 +21,6 @@ public class CardInfoScr : MonoBehaviour {
 
     private void Start()
     {
-        using (StreamWriter w = new StreamWriter("comand.txt"))
-        {
-            // w.Write(SelfCard.Logo.ToString()); transform.GetSiblingIndex()
-        }
         ShowCardInfo(CardManager._Cards_door_monster[transform.GetSiblingIndex()]); 
     }
 }
