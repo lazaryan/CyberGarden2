@@ -116,7 +116,7 @@ public class DataBase
         addCardDoor("monster", "Дедлайн", "", 0, 10, 1);
         addCardDoor("monster", "Вездесущий баг", "", 0, 4, 1);
         addCardDoor("monster", "Синий экран", "", 0, 25, 1);
-        addCardDoor("monster", "Лееееень...", "", 0, 15, 1);
+        addCardDoor("monster", "Lazy", "", 0, 15, 1);
         addCardDoor("monster", "Аналог", "", 0, 5, 1);
         addCardDoor("monster", "No comments", "", 0, 1, 1);
         addCardDoor("monster", "Склероз", "", 0, 3, 1);
@@ -124,13 +124,13 @@ public class DataBase
 
     static void SelectDataTresure()
     {
-        addCardTresure("bonus", "Коврик для мышки", "", 0);
-        addCardTresure("bonus", "Большая кружка", "", 0);
-        addCardTresure("bonus", "Пакет", "", 0);
-        addCardTresure("bonus", "Наушники", "", 0);
-        addCardTresure("bonus", "Знакомая реликвия", "", 0);
-        addCardTresure("bonus", "Наёмничек", "", 0);
-        addCardTresure("bonus", "Своя мышь", "", 0);
+        addCardTresure("bonus", "Carpet", "", 0);
+        addCardTresure("bonus", "Cup", "", 0);
+        addCardTresure("bonus", "Header", "", 0);
+        addCardTresure("bonus", "Headphones", "", 0);
+        addCardTresure("bonus", "Keyboard", "", 0);
+        addCardTresure("bonus", "Mercenary", "", 0);
+        addCardTresure("bonus", "Mouse", "", 0);
     }
 
     static void addCardDoor(string type, string name, string effect, int bonus, int level, int level_up)
