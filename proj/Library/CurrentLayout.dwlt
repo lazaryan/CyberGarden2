@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,11 @@ MonoBehaviour:
   m_MinSize: {x: 681, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 69
+=======
+  controlID: 22
+>>>>>>> 7ddee36e852b9a1500f376c77abde936cbdfbb84
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +148,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -210,7 +214,11 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 70
+=======
+  controlID: 23
+>>>>>>> 7ddee36e852b9a1500f376c77abde936cbdfbb84
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -234,7 +242,11 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 28
+=======
+  controlID: 24
+>>>>>>> 7ddee36e852b9a1500f376c77abde936cbdfbb84
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -363,15 +375,25 @@ MonoBehaviour:
   m_StartGridSize: 53
   m_LastFolders:
   - Assets/Scripts
+<<<<<<< HEAD
   m_LastFoldersGridSize: 53
+=======
+  m_LastFoldersGridSize: 16
+>>>>>>> 7ddee36e852b9a1500f376c77abde936cbdfbb84
   m_LastProjectPath: G:\project\CyberGarden2\proj
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 762d0000
     m_LastClickedID: 11638
     m_ExpandedIDs: 00000000262c0000242d0000ae2f000000ca9a3b
+=======
+    m_SelectedIDs: c82c0000
+    m_LastClickedID: 11464
+    m_ExpandedIDs: 00000000da2b0000882c00005c2e000000ca9a3b
+>>>>>>> 7ddee36e852b9a1500f376c77abde936cbdfbb84
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -399,7 +421,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000262c0000242d0000ae2f0000
+=======
+    m_ExpandedIDs: 00000000da2b0000882c00005c2e0000
+>>>>>>> 7ddee36e852b9a1500f376c77abde936cbdfbb84
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -430,18 +456,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c623000024670000022c0000ae2f000006350000000000007c4bffff84f9fbff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Plugins
+      m_OriginalName: Plugins
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 11342
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
@@ -515,9 +541,15 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: 18fbffff00000000
+=======
+    m_SelectedIDs: 6e290000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 0efbffff00000000
+>>>>>>> 7ddee36e852b9a1500f376c77abde936cbdfbb84
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
