@@ -114,9 +114,9 @@ public class DataBase
     {
         addCardDoor("monster", "Amnesiya", "", 2, 2, 1);
         addCardDoor("monster", "Analog", "", 5, 10, 1);
-        addCardDoor("monster", "Bluescreen", "", 5, 4, 1);
+        addCardDoor("monster", "Bluescreen", "", 3, 4, 1);
         addCardDoor("monster", "Bug", "", 1, 25, 1);
-        addCardDoor("monster", "Daedline", "", 2, 15, 1);
+        addCardDoor("monster", "Daedline", "", 5, 15, 1);
         addCardDoor("monster", "Dotwithcoma", "", 1, 5, 1);
         addCardDoor("monster", "Lazy", "", 3, 1, 1);
         addCardDoor("monster", "Nocomments", "", 1, 3, 1);
