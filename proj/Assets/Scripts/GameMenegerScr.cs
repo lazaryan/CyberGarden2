@@ -141,13 +141,10 @@ public class GameMenegerScr : MonoBehaviour {
         }
         else
         {
-            while(TurnTime-->0)
+            while (TurnTime-- > 27)
             {
-                while (TurnTime-- > 27)
-                {
-                    TurnTimeText.text = TurnTime.ToString();
-                    yield return new WaitForSeconds(1);
-                }
+                TurnTimeText.text = TurnTime.ToString();
+                yield return new WaitForSeconds(1);
             }
         }
 

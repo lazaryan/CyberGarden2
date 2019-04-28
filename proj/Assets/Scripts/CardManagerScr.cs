@@ -57,7 +57,7 @@ public class CardManagerScr : MonoBehaviour
         CardManager._Cards_door_monster = dataBase.getDoor("monster");
         CardManager._Cards_treasure_bonus = dataBase.getTreasure("bonus");
     }
-    
+
 }
 
 public class DataBase
@@ -92,6 +92,7 @@ public class DataBase
             "name char(100) NOT NULL," +
             "logo char(100) NOT NULL," +
             "effect char(100) NOT NULL," +
+            "shirt char(100) NOT NULL," +
             "bonus int NOT NULL," +
             "level int," +
             "level_up int" +
@@ -104,6 +105,7 @@ public class DataBase
             "name char(100) NOT NULL," +
             "logo char(100) NOT NULL," +
             "effect char(100) NOT NULL," +
+            "shirt char(100) NOT NULL," +
             "bonus int NOT NULL" +
             ")", connection);
 
@@ -141,9 +143,9 @@ public class DataBase
 
         SqliteConnection connection = new SqliteConnection("Data Source=" + databaseName);
         SqliteCommand command = new SqliteCommand(string.Format("" +
-            "INSERT INTO card_door (type, name, logo, effect, bonus, level, level_up) " +
-            "VALUES ('{0}', '{1}', '{2}', '{3}', {4}, {5}, {6})",
-            type, name, "Sprites/Card_door/" + name, effect, bonus, level, level_up),
+            "INSERT INTO card_door (type, name, logo, effect, shirt, bonus, level, level_up) " +
+            "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', {5}, {6}, {7})",
+            type, name, "Sprites/Card_door/" + name, effect, "Sprites/Card_door/Door_Shirt", bonus, level, level_up),
             connection);
 
         connection.Open();
@@ -155,9 +157,9 @@ public class DataBase
     {
         SqliteConnection connection = new SqliteConnection("Data Source=" + databaseName);
         SqliteCommand command = new SqliteCommand(string.Format("" +
-            "INSERT INTO card_treasure (type, name, logo, effect, bonus) " +
-            "VALUES ('{0}', '{1}', '{2}', '{3}', {4})",
-            type, name, "Sprites/Card_treasure/" + name, effect, bonus),
+            "INSERT INTO card_treasure (type, name, logo, effect, shirt, bonus) " +
+            "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', {5})",
+            type, name, "Sprites/Card_treasure/" + name, effect, "Sprites/Card_treasure/Treasure_Shirt", bonus),
             connection);
 
         connection.Open();
@@ -177,7 +179,7 @@ public class DataBase
 
         foreach (DbDataRecord record in reader)
         {
-            list.Add(new Card_door_monster(record["name"].ToString(), record["logo"].ToString(), Convert.ToInt32(record["level"]), Convert.ToInt32(record["level_up"])));
+            list.Add(new Card_door_monster(record["name"].ToString(), record["logo"].ToString(), Convert.ToInt32(record["level"]), Convert.ToInt32(record["level_up"]), record["shirt"].ToString()));
         }
 
 
@@ -198,7 +200,7 @@ public class DataBase
 
         foreach (DbDataRecord record in reader)
         {
-            list.Add(new Card_treasure_bonus(record["name"].ToString(), record["logo"].ToString(), Convert.ToInt32(record["bonus"])));
+            list.Add(new Card_treasure_bonus(record["name"].ToString(), record["logo"].ToString(), Convert.ToInt32(record["bonus"]), record["shirt"].ToString()));
         }
 
         connection.Close();
