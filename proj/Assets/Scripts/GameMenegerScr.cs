@@ -50,21 +50,47 @@ public class Game
 public class GameMenegerScr : MonoBehaviour {
 
     public Game CurrentGame;
-    public Transform EnemyHand, PlayerHand;
+    public Transform EnemyHand, PlayerHand, PlayerField_m;
     public GameObject CardPref;
+
+    int Turn, TurnTime = 30;
+    public TextMeshProUGUI TurnTimeText;
+    public Button EndTurnBtn;
+
+    public bool IsPlayerTurn
+    {
+        get
+        {
+            return Turn % 2 == 0;
+        }
+    }
+
 	// Use this for initialization
 	void Start () {
+        Turn = 0;
         CurrentGame = new Game();
         GiveHandCards(CurrentGame.EnemyDeck, EnemyHand);
         GiveHandCards(CurrentGame.PlayerDeck, PlayerHand);
+        GiveFieldCards(CurrentGame.PlayerDeck_m, PlayerField_m);
+
+        StartCoroutine(TurnFunc());
 	}
 
     void GiveHandCards(List<Card_treasure_bonus> deck, Transform hand)
     {
         int i = 0; 
-        while (i++ < 4)
+        while (i++ < 2)
         {
             GiveCardToHand(deck, hand);
+
+        }
+    }
+    void GiveFieldCards(List<Card_door_monster> deck, Transform hand)
+    {
+        int i = 0;
+        while (i++ < 1)
+        {
+            GiveCardToFieald(deck, hand);
 
         }
     }
@@ -87,5 +113,59 @@ public class GameMenegerScr : MonoBehaviour {
             cardGO.GetComponent<CardInfoScr>().ShowCardInfo(card);
         }
         deck.RemoveAt(0);
+    }
+
+    void GiveCardToFieald(List<Card_door_monster> deck, Transform hand)
+    {
+        if (deck.Count == 0)
+        {
+            return;
+        }
+        Card_door_monster card = deck[0];
+
+        GameObject cardGO = Instantiate(CardPref, hand, false);
+        cardGO.GetComponent<CardInfoScr>().ShowCardInfo_d(card);
+        deck.RemoveAt(0);
+    }
+    IEnumerator TurnFunc()
+    {
+        TurnTime = 30;
+        TurnTimeText.text = TurnTime.ToString();
+        if (IsPlayerTurn)
+        {
+            while (TurnTime-- > 0)
+            {
+                TurnTimeText.text = TurnTime.ToString();
+                yield return new WaitForSeconds(1);
+            }
+        }
+        else
+        {
+            while(TurnTime-->0)
+            {
+                while (TurnTime-- > 0)
+                {
+                    TurnTimeText.text = TurnTime.ToString();
+                    yield return new WaitForSeconds(1);
+                }
+            }
+        }
+
+    }
+    public void ChangeTurn()
+    {
+        StopAllCoroutines();
+        Turn++;
+
+        EndTurnBtn.interactable = IsPlayerTurn;
+        if(IsPlayerTurn)
+        {
+            GiveNewCards();
+        }
+        StartCoroutine(TurnFunc());
+    }
+    void GiveNewCards()
+    {
+        GiveCardToFieald(CurrentGame.PlayerDeck_m, PlayerField_m);
     }
 }
