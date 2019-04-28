@@ -1,17 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using System.Data.OleDb;
-using System.Data;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CarMovementdScr : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
-{
+public class CardMovementScr : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
+
     Camera MainCamera;
     Vector3 offset;
     public Transform DefaultParent, DefaultTempCardParent;
     GameObject TempCardGO;
+
     void Awake()
     {
         MainCamera = Camera.allCameras[0];
@@ -20,23 +18,26 @@ public class CarMovementdScr : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     public void OnBeginDrag(PointerEventData eventData)
     {
         offset = transform.position - MainCamera.ScreenToWorldPoint(eventData.position);
+
         DefaultParent = DefaultTempCardParent = transform.parent;
 
         TempCardGO.transform.SetParent(DefaultParent);
         TempCardGO.transform.SetSiblingIndex(transform.GetSiblingIndex());
 
         transform.SetParent(DefaultParent.parent);
-        GetComponent<CanvasGroup>().blocksRaycasts = false;
+        GetComponent<CanvasGroup>().blocksRaycasts = false; 
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        Vector3 newpos = MainCamera.ScreenToWorldPoint(eventData.position);
-        transform.position = newpos + offset;
+        Vector3 newPos = MainCamera.ScreenToWorldPoint(eventData.position);
+        transform.position = newPos + offset;
+
         if (TempCardGO.transform.parent != DefaultTempCardParent)
         {
             TempCardGO.transform.SetParent(DefaultTempCardParent);
         }
+
         CheckPosition();
     }
 
@@ -48,26 +49,23 @@ public class CarMovementdScr : MonoBehaviour, IBeginDragHandler, IEndDragHandler
         transform.SetSiblingIndex(TempCardGO.transform.GetSiblingIndex());
         TempCardGO.transform.SetParent(GameObject.Find("Canvas").transform);
         TempCardGO.transform.localPosition = new Vector3(2312, 0);
-        mysql sq = new mysql();
-        sq.sql();
     }
     void CheckPosition()
     {
         int newIndex = DefaultTempCardParent.childCount;
-
-        for(int i = 0; i < DefaultTempCardParent.childCount; i++)
+        for (int i = 0; i < DefaultTempCardParent.childCount; i++)
         {
             if(transform.position.x < DefaultTempCardParent.GetChild(i).position.x)
             {
                 newIndex = i;
-
-                if(TempCardGO.transform.GetSiblingIndex() < newIndex)
+                if (TempCardGO.transform.GetSiblingIndex() < newIndex)
                 {
                     newIndex--;
                 }
                 break;
             }
         }
+
         TempCardGO.transform.SetSiblingIndex(newIndex);
     }
 }
