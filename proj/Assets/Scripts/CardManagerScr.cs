@@ -112,31 +112,35 @@ public class DataBase
 
     static void SelectDataDoor()
     {
-        addCardDoor("monster", "Lazy", "", 5, 2, 0);
-        addCardDoor("aaaaa", " с запятой", "", 5, 2, 0);
-        addCardDoor("monster", "точка с ", "", 5, 2, 0);
-        addCardDoor("monster", "точка запятой", "", 5, 2, 0);
+        addCardDoor("monster", "Точка с запятой", "", 0, 2, 1);
+        addCardDoor("monster", "Дедлайн", "", 0, 10, 1);
+        addCardDoor("monster", "Вездесущий баг", "", 0, 4, 1);
+        addCardDoor("monster", "Синий экран", "", 0, 25, 1);
+        addCardDoor("monster", "Лееееень...", "", 0, 15, 1);
+        addCardDoor("monster", "Аналог", "", 0, 5, 1);
+        addCardDoor("monster", "No comments", "", 0, 1, 1);
+        addCardDoor("monster", "Склероз", "", 0, 3, 1);
     }
 
     static void SelectDataTresure()
     {
-        addCardTresure("spell", "fgfdjgfd", "dfs", 0);
+        addCardTresure("bonus", "Коврик для мышки", "", 0);
+        addCardTresure("bonus", "Большая кружка", "", 0);
+        addCardTresure("bonus", "Пакет", "", 0);
+        addCardTresure("bonus", "Наушники", "", 0);
+        addCardTresure("bonus", "Знакомая реликвия", "", 0);
+        addCardTresure("bonus", "Наёмничек", "", 0);
+        addCardTresure("bonus", "Своя мышь", "", 0);
     }
 
     static void addCardDoor(string type, string name, string effect, int bonus, int level, int level_up)
     {
 
         SqliteConnection connection = new SqliteConnection("Data Source=" + databaseName);
-        string logo = "Sprites/Card_door/" + name;
-        using (StreamWriter w = new StreamWriter("comand"+name+".txt"))
-        {
-            // w.Write(SelfCard.Logo.ToString());
-            w.WriteLine(logo);
-        }
         SqliteCommand command = new SqliteCommand(string.Format("" +
             "INSERT INTO card_door (type, name, logo, effect, bonus, level, level_up) " +
             "VALUES ('{0}', '{1}', '{2}', '{3}', {4}, {5}, {6})",
-            type, name, logo, effect, bonus, level, level_up),
+            type, name, "Sprites/Card_door/" + name, effect, bonus, level, level_up),
             connection);
 
         connection.Open();
