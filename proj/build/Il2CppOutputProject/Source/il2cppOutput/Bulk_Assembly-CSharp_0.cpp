@@ -23394,22 +23394,22 @@ extern "C" IL2CPP_METHOD_ATTR void DataBase_SelectDataDoor_m2264027440 (RuntimeO
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// addCardDoor("monster", "Amnesiya", "", 0, 2, 1);
-		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral3220192365, _stringLiteral757602046, 0, 2, 1, /*hidden argument*/NULL);
-		// addCardDoor("monster", "Analog", "", 0, 10, 1);
-		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral780708881, _stringLiteral757602046, 0, ((int32_t)10), 1, /*hidden argument*/NULL);
-		// addCardDoor("monster", "Bluescreen", "", 0, 4, 1);
-		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral2000441746, _stringLiteral757602046, 0, 4, 1, /*hidden argument*/NULL);
-		// addCardDoor("monster", "Bug", "", 0, 25, 1);
-		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral2863442597, _stringLiteral757602046, 0, ((int32_t)25), 1, /*hidden argument*/NULL);
-		// addCardDoor("monster", "Daedline", "", 0, 15, 1);
-		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral4104855683, _stringLiteral757602046, 0, ((int32_t)15), 1, /*hidden argument*/NULL);
-		// addCardDoor("monster", "Dotwithcoma", "", 0, 5, 1);
-		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral3944103709, _stringLiteral757602046, 0, 5, 1, /*hidden argument*/NULL);
-		// addCardDoor("monster", "Lazy", "", 0, 1, 1);
-		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral811300124, _stringLiteral757602046, 0, 1, 1, /*hidden argument*/NULL);
-		// addCardDoor("monster", "Nocomments", "", 0, 3, 1);
-		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral3154765094, _stringLiteral757602046, 0, 3, 1, /*hidden argument*/NULL);
+		// addCardDoor("monster", "Amnesiya", "", 2, 2, 1);
+		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral3220192365, _stringLiteral757602046, 2, 2, 1, /*hidden argument*/NULL);
+		// addCardDoor("monster", "Analog", "", 5, 10, 1);
+		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral780708881, _stringLiteral757602046, 5, ((int32_t)10), 1, /*hidden argument*/NULL);
+		// addCardDoor("monster", "Bluescreen", "", 3, 4, 1);
+		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral2000441746, _stringLiteral757602046, 3, 4, 1, /*hidden argument*/NULL);
+		// addCardDoor("monster", "Bug", "", 1, 25, 1);
+		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral2863442597, _stringLiteral757602046, 1, ((int32_t)25), 1, /*hidden argument*/NULL);
+		// addCardDoor("monster", "Daedline", "", 5, 15, 1);
+		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral4104855683, _stringLiteral757602046, 5, ((int32_t)15), 1, /*hidden argument*/NULL);
+		// addCardDoor("monster", "Dotwithcoma", "", 1, 5, 1);
+		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral3944103709, _stringLiteral757602046, 1, 5, 1, /*hidden argument*/NULL);
+		// addCardDoor("monster", "Lazy", "", 3, 1, 1);
+		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral811300124, _stringLiteral757602046, 3, 1, 1, /*hidden argument*/NULL);
+		// addCardDoor("monster", "Nocomments", "", 1, 3, 1);
+		DataBase_addCardDoor_m4104125901(NULL /*static, unused*/, _stringLiteral44894389, _stringLiteral3154765094, _stringLiteral757602046, 1, 3, 1, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -23424,20 +23424,20 @@ extern "C" IL2CPP_METHOD_ATTR void DataBase_SelectDataTresure_m951135376 (Runtim
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// addCardTresure("bonus", "Carpet", "", 0);
-		DataBase_addCardTresure_m476306503(NULL /*static, unused*/, _stringLiteral365775221, _stringLiteral787928648, _stringLiteral757602046, 0, /*hidden argument*/NULL);
-		// addCardTresure("bonus", "Cup", "", 0);
-		DataBase_addCardTresure_m476306503(NULL /*static, unused*/, _stringLiteral365775221, _stringLiteral228667575, _stringLiteral757602046, 0, /*hidden argument*/NULL);
-		// addCardTresure("bonus", "Header", "", 0);
-		DataBase_addCardTresure_m476306503(NULL /*static, unused*/, _stringLiteral365775221, _stringLiteral3529813182, _stringLiteral757602046, 0, /*hidden argument*/NULL);
-		// addCardTresure("bonus", "Headphones", "", 0);
-		DataBase_addCardTresure_m476306503(NULL /*static, unused*/, _stringLiteral365775221, _stringLiteral1502128262, _stringLiteral757602046, 0, /*hidden argument*/NULL);
-		// addCardTresure("bonus", "Keyboard", "", 0);
-		DataBase_addCardTresure_m476306503(NULL /*static, unused*/, _stringLiteral365775221, _stringLiteral3641001163, _stringLiteral757602046, 0, /*hidden argument*/NULL);
-		// addCardTresure("bonus", "Mercenary", "", 0);
-		DataBase_addCardTresure_m476306503(NULL /*static, unused*/, _stringLiteral365775221, _stringLiteral1493466493, _stringLiteral757602046, 0, /*hidden argument*/NULL);
-		// addCardTresure("bonus", "Mouse", "", 0);
-		DataBase_addCardTresure_m476306503(NULL /*static, unused*/, _stringLiteral365775221, _stringLiteral1957967135, _stringLiteral757602046, 0, /*hidden argument*/NULL);
+		// addCardTresure("bonus", "Carpet", "", 1);
+		DataBase_addCardTresure_m476306503(NULL /*static, unused*/, _stringLiteral365775221, _stringLiteral787928648, _stringLiteral757602046, 1, /*hidden argument*/NULL);
+		// addCardTresure("bonus", "Cup", "", 3);
+		DataBase_addCardTresure_m476306503(NULL /*static, unused*/, _stringLiteral365775221, _stringLiteral228667575, _stringLiteral757602046, 3, /*hidden argument*/NULL);
+		// addCardTresure("bonus", "Header", "", 2);
+		DataBase_addCardTresure_m476306503(NULL /*static, unused*/, _stringLiteral365775221, _stringLiteral3529813182, _stringLiteral757602046, 2, /*hidden argument*/NULL);
+		// addCardTresure("bonus", "Headphones", "", 1);
+		DataBase_addCardTresure_m476306503(NULL /*static, unused*/, _stringLiteral365775221, _stringLiteral1502128262, _stringLiteral757602046, 1, /*hidden argument*/NULL);
+		// addCardTresure("bonus", "Keyboard", "", 2);
+		DataBase_addCardTresure_m476306503(NULL /*static, unused*/, _stringLiteral365775221, _stringLiteral3641001163, _stringLiteral757602046, 2, /*hidden argument*/NULL);
+		// addCardTresure("bonus", "Mercenary", "", 4);
+		DataBase_addCardTresure_m476306503(NULL /*static, unused*/, _stringLiteral365775221, _stringLiteral1493466493, _stringLiteral757602046, 4, /*hidden argument*/NULL);
+		// addCardTresure("bonus", "Mouse", "", 1);
+		DataBase_addCardTresure_m476306503(NULL /*static, unused*/, _stringLiteral365775221, _stringLiteral1957967135, _stringLiteral757602046, 1, /*hidden argument*/NULL);
 		// }
 		return;
 	}

@@ -13,15 +13,17 @@ public struct Card_door_monster
 {
     public string Name;
     public Sprite Logo;
+    public Sprite Shirt;
     public int Level;
     public int Level_up;
 
-    public Card_door_monster(string name, string logoPath, int level, int level_up)
+    public Card_door_monster(string name, string logoPath, int level, int level_up, string shirtrPath)
     {
         Name = name;
         Logo = Resources.Load<Sprite>(logoPath);
         Level = level;
         Level_up = level_up;
+        Shirt = Resources.Load<Sprite>(shirtrPath);
     }
 }
 public struct Card_treasure_bonus
@@ -29,12 +31,13 @@ public struct Card_treasure_bonus
     public string Name;
     public Sprite Logo;
     public int Bonus;
-
-    public Card_treasure_bonus(string name, string logoPath, int bonus)
+    public Sprite Shirt;
+    public Card_treasure_bonus(string name, string logoPath, int bonus, string shirtrPath)
     {
         Name = name;
         Logo = Resources.Load<Sprite>(logoPath);
         Bonus = bonus;
+        Shirt = Resources.Load<Sprite>(shirtrPath);
     }
 }
 

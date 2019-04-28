@@ -10,10 +10,9 @@ public class CardInfoScr : MonoBehaviour {
 
     public Card_door_monster _SelfCard;
     public Image Logo;
-
+    public Image Shirt;
     public TextMeshProUGUI Name;
     //GameObject temp = GameObject.Find("Hand_2");
-
     public void HideCardInfo(Card_treasure_bonus card)
     {
         //ShowCardInfo(card);
