@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+public enum FieldType
+{
+    SELF_HAND,
+    SELF_FIELD,
+    ENEMY_HAND,
+    ENEMY_FIELD,
+}
+
 public class DropePleaceScr : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public void OnDrop(PointerEventData eventData)
