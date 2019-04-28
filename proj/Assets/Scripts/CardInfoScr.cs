@@ -17,7 +17,7 @@ public class CardInfoScr : MonoBehaviour {
     {
         //ShowCardInfo(card);
        Logo.sprite = null;
-       // Shirt.sprite = card.Shirt;
+         Shirt.sprite = card.Shirt;
       //  temp.SetActive(false);
 
     }
@@ -26,12 +26,13 @@ public class CardInfoScr : MonoBehaviour {
     {
         
         Logo.sprite = null;
-        //Shirt.sprite = card.Shirt;
+        Shirt.sprite = card.Shirt;
     }
 
     public void ShowCardInfo_d(Card_door_monster card)
     {
         _SelfCard = card;
+        
         Logo.sprite = card.Logo;
         
         Logo.preserveAspect = true;

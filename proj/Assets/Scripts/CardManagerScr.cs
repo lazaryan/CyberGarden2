@@ -63,6 +63,10 @@ public class CardManagerScr : MonoBehaviour
 public class DataBase
 {
     private const string databaseName = "G:\\project\\CyberGarden2\\proj\\Assets\\StreamingAssets\\Cards.db";
+    //private const string databaseName = "D:\\CyberGarden2\\proj\\Assets\\StreamingAssets\\Cards.db";
+
+    static string sprites_door = "Sprites/Card_door/";
+    static string sprites_treasure = "Sprites/Card_treasure/";
 
     public void start()
     {
@@ -145,7 +149,7 @@ public class DataBase
         SqliteCommand command = new SqliteCommand(string.Format("" +
             "INSERT INTO card_door (type, name, logo, effect, shirt, bonus, level, level_up) " +
             "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', {5}, {6}, {7})",
-            type, name, "Sprites/Card_door/" + name, effect, "Sprites/Card_door/Door_Shirt", bonus, level, level_up),
+            type, name, sprites_door + name, effect, sprites_door + "Door_Shirt", bonus, level, level_up),
             connection);
 
         connection.Open();
@@ -159,7 +163,7 @@ public class DataBase
         SqliteCommand command = new SqliteCommand(string.Format("" +
             "INSERT INTO card_treasure (type, name, logo, effect, shirt, bonus) " +
             "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', {5})",
-            type, name, "Sprites/Card_treasure/" + name, effect, "Sprites/Card_treasure/Treasure_Shirt", bonus),
+            type, name, sprites_treasure + name, effect, sprites_treasure + "Treasure_Shirt", bonus),
             connection);
 
         connection.Open();

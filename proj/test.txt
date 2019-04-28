@@ -1,0 +1,7 @@
+Carpet Sprites/Card_treasure/Carpet
+Cup Sprites/Card_treasure/Cup
+Header Sprites/Card_treasure/Header
+Headphones Sprites/Card_treasure/Headphones
+Keyboard Sprites/Card_treasure/Keyboard
+Mercenary Sprites/Card_treasure/Mercenary
+Mouse Sprites/Card_treasure/Mouse
