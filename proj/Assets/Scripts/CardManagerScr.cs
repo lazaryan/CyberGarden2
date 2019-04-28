@@ -112,14 +112,14 @@ public class DataBase
 
     static void SelectDataDoor()
     {
-        addCardDoor("monster", "Точка с запятой", "", 0, 2, 1);
-        addCardDoor("monster", "Дедлайн", "", 0, 10, 1);
-        addCardDoor("monster", "Вездесущий баг", "", 0, 4, 1);
-        addCardDoor("monster", "Синий экран", "", 0, 25, 1);
-        addCardDoor("monster", "Lazy", "", 0, 15, 1);
-        addCardDoor("monster", "Аналог", "", 0, 5, 1);
-        addCardDoor("monster", "No comments", "", 0, 1, 1);
-        addCardDoor("monster", "Склероз", "", 0, 3, 1);
+        addCardDoor("monster", "Amnesiya", "", 0, 2, 1);
+        addCardDoor("monster", "Analog", "", 0, 10, 1);
+        addCardDoor("monster", "Bluescreen", "", 0, 4, 1);
+        addCardDoor("monster", "Bug", "", 0, 25, 1);
+        addCardDoor("monster", "Daedline", "", 0, 15, 1);
+        addCardDoor("monster", "Dotwithcoma", "", 0, 5, 1);
+        addCardDoor("monster", "Lazy", "", 0, 1, 1);
+        addCardDoor("monster", "Nocomments", "", 0, 3, 1);
     }
 
     static void SelectDataTresure()
