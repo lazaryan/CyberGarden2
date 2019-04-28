@@ -8,11 +8,12 @@ public enum FieldType
     SELF_HAND,
     SELF_FIELD,
     ENEMY_HAND,
-    ENEMY_FIELD,
+    ENEMY_FIELD, 
 }
 
 public class DropePleaceScr : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
+    public FieldType Type;
     public void OnDrop(PointerEventData eventData)
     {
         CardMovementScr card = eventData.pointerDrag.GetComponent<CardMovementScr>();

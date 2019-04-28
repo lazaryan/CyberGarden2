@@ -646,6 +646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d6eb89b9368f240955d8e9acbf064e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
 --- !u!114 &1146615455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -811,7 +812,7 @@ GameObject:
   - component: {fileID: 1289201450}
   - component: {fileID: 1289201453}
   m_Layer: 5
-  m_Name: in_play
+  m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -902,6 +903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d6eb89b9368f240955d8e9acbf064e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
 --- !u!1 &1361546630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,6 +1081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d6eb89b9368f240955d8e9acbf064e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 1
 --- !u!224 &1422338757 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224653792747370248, guid: c130dd90b3904294295cbd5d81a366fb,
