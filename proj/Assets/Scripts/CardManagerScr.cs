@@ -112,25 +112,25 @@ public class DataBase
 
     static void SelectDataDoor()
     {
-        addCardDoor("monster", "Amnesiya", "", 0, 2, 1);
-        addCardDoor("monster", "Analog", "", 0, 10, 1);
-        addCardDoor("monster", "Bluescreen", "", 0, 4, 1);
-        addCardDoor("monster", "Bug", "", 0, 25, 1);
-        addCardDoor("monster", "Daedline", "", 0, 15, 1);
-        addCardDoor("monster", "Dotwithcoma", "", 0, 5, 1);
-        addCardDoor("monster", "Lazy", "", 0, 1, 1);
-        addCardDoor("monster", "Nocomments", "", 0, 3, 1);
+        addCardDoor("monster", "Amnesiya", "", 2, 2, 1);
+        addCardDoor("monster", "Analog", "", 5, 10, 1);
+        addCardDoor("monster", "Bluescreen", "", 5, 4, 1);
+        addCardDoor("monster", "Bug", "", 1, 25, 1);
+        addCardDoor("monster", "Daedline", "", 2, 15, 1);
+        addCardDoor("monster", "Dotwithcoma", "", 1, 5, 1);
+        addCardDoor("monster", "Lazy", "", 3, 1, 1);
+        addCardDoor("monster", "Nocomments", "", 1, 3, 1);
     }
 
     static void SelectDataTresure()
     {
-        addCardTresure("bonus", "Carpet", "", 0);
-        addCardTresure("bonus", "Cup", "", 0);
-        addCardTresure("bonus", "Header", "", 0);
-        addCardTresure("bonus", "Headphones", "", 0);
-        addCardTresure("bonus", "Keyboard", "", 0);
-        addCardTresure("bonus", "Mercenary", "", 0);
-        addCardTresure("bonus", "Mouse", "", 0);
+        addCardTresure("bonus", "Carpet", "", 1);
+        addCardTresure("bonus", "Cup", "", 3);
+        addCardTresure("bonus", "Header", "", 2);
+        addCardTresure("bonus", "Headphones", "", 1);
+        addCardTresure("bonus", "Keyboard", "", 2);
+        addCardTresure("bonus", "Mercenary", "", 4);
+        addCardTresure("bonus", "Mouse", "", 1);
     }
 
     static void addCardDoor(string type, string name, string effect, int bonus, int level, int level_up)
