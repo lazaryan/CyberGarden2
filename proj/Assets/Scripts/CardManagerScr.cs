@@ -152,9 +152,9 @@ public class DataBase
     {
         SqliteConnection connection = new SqliteConnection("Data Source=" + databaseName);
         SqliteCommand command = new SqliteCommand(string.Format("" +
-            "INSERT INTO card_door (type, name, logo, effect, bonus) " +
+            "INSERT INTO card_treasure (type, name, logo, effect, bonus) " +
             "VALUES ('{0}', '{1}', '{2}', '{3}', {4})",
-            type, name, "Sprites/Card_door/" + name, effect, bonus),
+            type, name, "Sprites/Card_treasure/" + name, effect, bonus),
             connection);
 
         connection.Open();
